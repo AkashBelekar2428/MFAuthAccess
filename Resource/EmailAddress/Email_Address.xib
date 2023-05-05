@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Email_Address" customModule="Authentications" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Email_Address" customModule="MFAuthAccess" customModuleProvider="target">
             <connections>
                 <outlet property="emailAddressView" destination="ee0-hK-Sob" id="f3U-sU-VHz"/>
                 <outlet property="sendPINBtn" destination="1Pr-te-aN6" id="JCM-vM-TZS"/>
@@ -56,9 +56,9 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pr-te-aN6">
-                    <rect key="frame" x="143" y="216.33333333333334" width="200" height="35.666666666666657"/>
+                    <rect key="frame" x="170" y="216.33333333333334" width="146.33333333333337" height="35.666666666666657"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="5td-Bv-wKn"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5td-Bv-wKn"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Send PIN      -&gt;">

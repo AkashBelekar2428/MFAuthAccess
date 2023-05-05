@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Mobile_PIN" customModule="Reusable" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Mobile_PIN" customModule="MFAuthAccess" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="aYm-Z8-qRA">
             <rect key="frame" x="0.0" y="0.0" width="464" height="303"/>
@@ -42,7 +43,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQt-Po-UGI">
-                    <rect key="frame" x="8" y="205.33333333333334" width="448" height="2"/>
+                    <rect key="frame" x="8" y="207.33333333333334" width="448" height="2"/>
                     <color key="backgroundColor" systemColor="systemGray4Color"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="L4A-Tv-gfe"/>
@@ -57,8 +58,8 @@
                             <color key="textColor" red="0.023269023749999999" green="0.4093776643" blue="0.5326955914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="FWI-m2-eOn">
-                            <rect key="frame" x="0.0" y="50" width="349" height="34"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="FWI-m2-eOn">
+                            <rect key="frame" x="0.0" y="50" width="309" height="34"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7R-iY-7up">
                                     <rect key="frame" x="0.0" y="0.0" width="27" height="34"/>
@@ -67,7 +68,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YHx-hc-e78">
-                                    <rect key="frame" x="117" y="0.0" width="232" height="34"/>
+                                    <rect key="frame" x="77" y="0.0" width="232" height="34"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ol-Nb-gKL">
                                             <rect key="frame" x="0.0" y="0.0" width="32" height="34"/>
@@ -113,9 +114,9 @@
                     </buttonConfiguration>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-EG-ASd">
-                    <rect key="frame" x="132" y="223.33333333333334" width="200" height="35.666666666666657"/>
+                    <rect key="frame" x="163.66666666666666" y="225.33333333333334" width="136.99999999999997" height="35.666666666666657"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="vOI-PR-jy1"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vOI-PR-jy1"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Validate      -&gt;">
@@ -130,7 +131,7 @@
                 <constraint firstItem="Pvd-Bj-ty3" firstAttribute="centerX" secondItem="aYm-Z8-qRA" secondAttribute="centerX" id="2cZ-el-0Lc"/>
                 <constraint firstItem="M4K-Be-H9T" firstAttribute="leading" secondItem="ZO4-4Y-7MH" secondAttribute="leading" constant="16" id="9As-PJ-det"/>
                 <constraint firstItem="ZO4-4Y-7MH" firstAttribute="trailing" secondItem="P3r-E6-H59" secondAttribute="trailing" id="Als-2S-847"/>
-                <constraint firstItem="Pvd-Bj-ty3" firstAttribute="top" secondItem="glL-EG-ASd" secondAttribute="bottom" constant="10" id="EbR-jF-OHa"/>
+                <constraint firstItem="Pvd-Bj-ty3" firstAttribute="top" secondItem="glL-EG-ASd" secondAttribute="bottom" constant="8" id="EbR-jF-OHa"/>
                 <constraint firstItem="glL-EG-ASd" firstAttribute="top" secondItem="wQt-Po-UGI" secondAttribute="bottom" constant="16" id="HQr-YV-yZY"/>
                 <constraint firstItem="M4K-Be-H9T" firstAttribute="top" secondItem="P3r-E6-H59" secondAttribute="bottom" constant="16" id="MNp-MS-ftV"/>
                 <constraint firstItem="ZO4-4Y-7MH" firstAttribute="trailing" secondItem="M4K-Be-H9T" secondAttribute="trailing" constant="16" id="T9j-g4-C4B"/>

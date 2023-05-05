@@ -12,6 +12,7 @@ public class Mobile_Number:UIView {
     @IBOutlet weak public var sendPinBtn:UIButton!
     @IBOutlet weak public var mobileView:UIView!
     @IBOutlet weak public var tfMobileNum:UITextField!
+    @IBOutlet weak public var countryCodeLbl:UILabel!
     
     let nibName = "Mobile_Number"
  

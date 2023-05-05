@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Email_PIN" customModule="Reusable" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Email_PIN" customModule="MFAuthAccess" customModuleProvider="target">
             <connections>
                 <outlet property="PINView" destination="1Uy-9H-aoZ" id="MAb-SU-hUY"/>
             </connections>
@@ -55,14 +56,14 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1Uy-9H-aoZ">
                     <rect key="frame" x="16" y="76" width="432" height="84"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We sent a 6-Digit PIN to your Email xy*@a**.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo7-nO-KNn">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We sent a 6-Digit PIN to your Email xy*@a**.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo7-nO-KNn">
                             <rect key="frame" x="0.0" y="0.0" width="320.66666666666669" height="34"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                             <color key="textColor" red="0.023269023749999999" green="0.4093776643" blue="0.5326955914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-hI-khZ">
-                            <rect key="frame" x="0.0" y="50" width="349" height="34"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-hI-khZ">
+                            <rect key="frame" x="0.0" y="50" width="309" height="34"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7b-OO-48v">
                                     <rect key="frame" x="0.0" y="0.0" width="27" height="34"/>
@@ -71,7 +72,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7hv-8H-Tg5">
-                                    <rect key="frame" x="117" y="0.0" width="232" height="34"/>
+                                    <rect key="frame" x="77" y="0.0" width="232" height="34"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vSj-Kp-5yu">
                                             <rect key="frame" x="0.0" y="0.0" width="32" height="34"/>
@@ -117,12 +118,12 @@
                     </buttonConfiguration>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c41-aZ-GHG">
-                    <rect key="frame" x="132" y="223.33333333333334" width="200" height="35.666666666666657"/>
+                    <rect key="frame" x="168" y="223.33333333333334" width="128.33333333333337" height="35.666666666666657"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="AKm-W4-Jlq"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="AKm-W4-Jlq"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Validate      -&gt;">
+                    <buttonConfiguration key="configuration" style="filled" title="Validate    -&gt;">
                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                         <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                     </buttonConfiguration>

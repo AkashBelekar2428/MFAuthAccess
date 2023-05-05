@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '16.2'
 
 target 'MFAuthAccess_Example' do
   pod 'MFAuthAccess', :path => '../'

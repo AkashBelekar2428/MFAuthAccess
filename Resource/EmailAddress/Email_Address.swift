@@ -15,7 +15,9 @@ public class Email_Address: UIView {
     @IBOutlet weak public var tfEmail:UITextField!
     @IBOutlet weak public var sendPINBtn:UIButton!
     
+    
     let nibName = "Email_Address"
+    
     var delegate:pinViewSetDelegate?
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

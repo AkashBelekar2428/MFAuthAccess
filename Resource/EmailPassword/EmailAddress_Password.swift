@@ -11,6 +11,7 @@ import UIKit
 //}
 
 public class EmailAddress_Password: UIView {
+    
     @IBOutlet weak public var emailAddressLbl:UILabel!
     @IBOutlet weak public var tfEmailAddress:UITextField!
     @IBOutlet weak public var tfPassword:UITextField!

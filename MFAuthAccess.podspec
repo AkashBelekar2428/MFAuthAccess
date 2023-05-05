@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '16.2'
   s.swift_version = '5.0'
-  s.source_files = 'Resource/**/*.swift'
+  s.source_files = 'Resource/**/*'
   
   # s.resource_bundles = {
   #   'MFAuthAccess' => ['MFAuthAccess/Assets/*.png']

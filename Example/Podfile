@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MFAuthAccess_Example' do
+  pod 'MFAuthAccess', :path => '../'
+
+  target 'MFAuthAccess_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

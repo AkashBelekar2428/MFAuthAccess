@@ -32,8 +32,9 @@ public class Mobile_Number:UIView {
     }
     
     func loadViewFromNib() -> UIView? {
-        let nib = UINib(nibName: nibName, bundle: nil)
-        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+        let bundel = Bundle(for: Mobile_Number.self)
+        let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
+        return nib
     }
     
     @IBAction func mobileValidations(_ sender:UIButton){

@@ -28,8 +28,9 @@ public class Mobile_PIN: UIView {
     }
     
     func loadViewFromNib() -> UIView? {
-        let nib = UINib(nibName: nibName, bundle: nil)
-        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+        let bundel = Bundle(for: Mobile_PIN.self)
+        let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
+        return nib
     }
 
 }

@@ -27,8 +27,9 @@ public class Google_Authenticator: UIView {
     }
     
     func loadViewFromNib() -> UIView? {
-        let nib = UINib(nibName: nibName, bundle: nil)
-        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+        let bundel = Bundle(for: Google_Authenticator.self)
+        let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
+        return nib
     }
     
 }

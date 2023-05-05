@@ -28,8 +28,9 @@ public class _6DigitPIN: UIView {
     }
     
     func loadViewFromNib() -> UIView? {
-        let nib = UINib(nibName: nibName, bundle: nil)
-        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+        let bundel = Bundle(for: _6DigitPIN.self)
+        let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
+        return nib
     }
     
 

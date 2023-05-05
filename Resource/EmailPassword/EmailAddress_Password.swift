@@ -38,8 +38,9 @@ public class EmailAddress_Password: UIView {
     }
     
     func loadViewFromNib() -> UIView? {
-        let nib = UINib(nibName: nibName, bundle: nil)
-        return nib.instantiate(withOwner: self, options: nil).first as? UIView
+        let bundle = Bundle(for: EmailAddress_Password.self)
+        let nib = bundle.loadNibNamed(nibName, owner: self)?.first as? UIView
+        return nib
     }
     @IBAction func validateBtnAction(_ sender:UIButton){
         if Utility.shared.isValideEmail(email: tfEmailAddress.text!){

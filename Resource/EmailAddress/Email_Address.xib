@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Email_Address" customModule="Authentications" customModuleProvider="target">
+            <connections>
+                <outlet property="emailAddressView" destination="ee0-hK-Sob" id="f3U-sU-VHz"/>
+                <outlet property="sendPINBtn" destination="1Pr-te-aN6" id="JCM-vM-TZS"/>
+                <outlet property="tfEmail" destination="JZK-Xf-dHR" id="HTq-Uo-Gpe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XUU-FK-LLa">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="268"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-bI-PDL">
+                    <rect key="frame" x="0.0" y="0.0" width="486" height="80"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.logo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V20-16-EIO">
+                            <rect key="frame" x="8" y="10.333333333333332" width="100" height="58.333333333333343"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Df0-8q-tz6"/>
+                                <constraint firstAttribute="width" constant="100" id="Sks-Qv-S6I"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcY-8G-kKv">
+                            <rect key="frame" x="124" y="24.333333333333336" width="65.333333333333314" height="31.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstItem="V20-16-EIO" firstAttribute="leading" secondItem="KOf-bI-PDL" secondAttribute="leading" constant="8" id="0m2-kf-7ia"/>
+                        <constraint firstItem="V20-16-EIO" firstAttribute="centerY" secondItem="KOf-bI-PDL" secondAttribute="centerY" id="2DG-qx-rcO"/>
+                        <constraint firstAttribute="height" constant="80" id="9B1-TY-L2O"/>
+                        <constraint firstItem="YcY-8G-kKv" firstAttribute="centerY" secondItem="KOf-bI-PDL" secondAttribute="centerY" id="RRD-Mm-qW9"/>
+                        <constraint firstItem="YcY-8G-kKv" firstAttribute="leading" secondItem="V20-16-EIO" secondAttribute="trailing" constant="16" id="kKH-dr-BAQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQJ-VC-Ueo">
+                    <rect key="frame" x="8" y="204.33333333333334" width="470" height="2"/>
+                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="6In-kO-THl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pr-te-aN6">
+                    <rect key="frame" x="143" y="216.33333333333334" width="200" height="35.666666666666657"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="5td-Bv-wKn"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Send PIN      -&gt;">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="sendPINClicked:" destination="-1" eventType="touchUpInside" id="HUe-TS-352"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ee0-hK-Sob">
+                    <rect key="frame" x="16" y="90" width="454" height="104.33333333333331"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N66-Bf-Z5W">
+                    <rect key="frame" x="16" y="96" width="454" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mem-BA-mEB">
+                            <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="0.023269023749999999" green="0.4093776643" blue="0.5326955914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZK-Xf-dHR">
+                            <rect key="frame" x="126.66666666666666" y="0.0" width="287.33333333333337" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="togglepower" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kEQ-zP-xTC">
+                            <rect key="frame" x="424" y="0.99999999999999822" width="30" height="28.666666666666664"/>
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="45l-Fs-QzC"/>
+                                <constraint firstAttribute="height" constant="30" id="6Rq-Yq-fKz"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="21b-d9-upU"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="21b-d9-upU" firstAttribute="trailing" secondItem="KOf-bI-PDL" secondAttribute="trailing" id="2vm-T5-E5F"/>
+                <constraint firstItem="1Pr-te-aN6" firstAttribute="centerX" secondItem="XUU-FK-LLa" secondAttribute="centerX" id="AdJ-KJ-3Od"/>
+                <constraint firstItem="ee0-hK-Sob" firstAttribute="leading" secondItem="21b-d9-upU" secondAttribute="leading" constant="16" id="Ajm-Xx-gh6"/>
+                <constraint firstItem="BQJ-VC-Ueo" firstAttribute="centerX" secondItem="1Pr-te-aN6" secondAttribute="centerX" id="Eh4-Ey-nyQ"/>
+                <constraint firstItem="KOf-bI-PDL" firstAttribute="leading" secondItem="21b-d9-upU" secondAttribute="leading" id="FOs-rH-fgc"/>
+                <constraint firstItem="BQJ-VC-Ueo" firstAttribute="top" secondItem="XUU-FK-LLa" secondAttribute="top" constant="204.33333333333334" id="OFv-VV-Yxh"/>
+                <constraint firstItem="21b-d9-upU" firstAttribute="trailing" secondItem="N66-Bf-Z5W" secondAttribute="trailing" constant="16" id="SdJ-8d-44x"/>
+                <constraint firstItem="N66-Bf-Z5W" firstAttribute="leading" secondItem="21b-d9-upU" secondAttribute="leading" constant="16" id="TPG-pt-cg6"/>
+                <constraint firstItem="KOf-bI-PDL" firstAttribute="top" secondItem="XUU-FK-LLa" secondAttribute="top" id="TzF-dB-RmB"/>
+                <constraint firstItem="1Pr-te-aN6" firstAttribute="top" secondItem="BQJ-VC-Ueo" secondAttribute="bottom" constant="10" id="X87-1G-A8a"/>
+                <constraint firstItem="BQJ-VC-Ueo" firstAttribute="leading" secondItem="XUU-FK-LLa" secondAttribute="leading" constant="8" id="bdH-X2-l6e"/>
+                <constraint firstItem="BQJ-VC-Ueo" firstAttribute="top" secondItem="ee0-hK-Sob" secondAttribute="bottom" constant="10" id="g58-tM-5k3"/>
+                <constraint firstItem="21b-d9-upU" firstAttribute="trailing" secondItem="ee0-hK-Sob" secondAttribute="trailing" constant="16" id="mMS-zW-Ecv"/>
+                <constraint firstItem="N66-Bf-Z5W" firstAttribute="top" secondItem="KOf-bI-PDL" secondAttribute="bottom" constant="16" id="sd6-AB-lbI"/>
+                <constraint firstItem="ee0-hK-Sob" firstAttribute="top" secondItem="KOf-bI-PDL" secondAttribute="bottom" constant="10" id="vfg-ne-cBO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="108" y="-408"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <image name="togglepower" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

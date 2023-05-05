@@ -1,0 +1,16 @@
+PODS:
+  - MFAuthAccess (0.1.0)
+
+DEPENDENCIES:
+  - MFAuthAccess (from `../`)
+
+EXTERNAL SOURCES:
+  MFAuthAccess:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MFAuthAccess: 48ab8f0a0063fad93958db91831ae285f85f6d31
+
+PODFILE CHECKSUM: 8538f189f0b900edd7ee8d010c5ef8de6ed90ffe
+
+COCOAPODS: 1.12.1

@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		543F68EE95E522529C8620FC /* Pods_TestingMFAuthAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64740F9C8254FC7B67274D5C /* Pods_TestingMFAuthAccess.framework */; };
+		AE505E1B2A04F84B0094BAC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE505E1A2A04F84B0094BAC8 /* AppDelegate.swift */; };
+		AE505E242A04F84D0094BAC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE505E232A04F84D0094BAC8 /* Assets.xcassets */; };
+		AE505E272A04F84D0094BAC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE505E252A04F84D0094BAC8 /* LaunchScreen.storyboard */; };
+		AE505E322A04F84D0094BAC8 /* TestingMFAuthAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE505E312A04F84D0094BAC8 /* TestingMFAuthAccessTests.swift */; };
+		AE505E3C2A04F84D0094BAC8 /* TestingMFAuthAccessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE505E3B2A04F84D0094BAC8 /* TestingMFAuthAccessUITests.swift */; };
+		AE505E3E2A04F84D0094BAC8 /* TestingMFAuthAccessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE505E3D2A04F84D0094BAC8 /* TestingMFAuthAccessUITestsLaunchTests.swift */; };
+		AE72CA182A068C6D00BD245A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE72CA162A068C6D00BD245A /* FirstViewController.swift */; };
+		AE72CA192A068C6D00BD245A /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE72CA172A068C6D00BD245A /* FirstViewController.xib */; };
+		AEB884D72A0CCC95001B7832 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB884D52A0CCC95001B7832 /* ViewController.swift */; };
+		AEB884D82A0CCC95001B7832 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB884D62A0CCC95001B7832 /* ViewController.xib */; };
+		B74CAF1D6ACBC9A31EAC1CE1 /* Pods_TestingMFAuthAccessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D00E6C05E10B4BB6A1197A2 /* Pods_TestingMFAuthAccessTests.framework */; };
+		DE8D63AE2B82761D044A5A1B /* Pods_TestingMFAuthAccess_TestingMFAuthAccessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68EF0CCC3755C3B07651E63 /* Pods_TestingMFAuthAccess_TestingMFAuthAccessUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE505E2E2A04F84D0094BAC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE505E0F2A04F84B0094BAC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE505E162A04F84B0094BAC8;
+			remoteInfo = TestingMFAuthAccess;
+		};
+		AE505E382A04F84D0094BAC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE505E0F2A04F84B0094BAC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE505E162A04F84B0094BAC8;
+			remoteInfo = TestingMFAuthAccess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F458C853737252B285E40A0 /* Pods-TestingMFAuthAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingMFAuthAccess.release.xcconfig"; path = "Target Support Files/Pods-TestingMFAuthAccess/Pods-TestingMFAuthAccess.release.xcconfig"; sourceTree = "<group>"; };
+		5D00E6C05E10B4BB6A1197A2 /* Pods_TestingMFAuthAccessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingMFAuthAccessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639F89FB785C6C2293D2F9CA /* Pods-TestingMFAuthAccessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingMFAuthAccessTests.release.xcconfig"; path = "Target Support Files/Pods-TestingMFAuthAccessTests/Pods-TestingMFAuthAccessTests.release.xcconfig"; sourceTree = "<group>"; };
+		64740F9C8254FC7B67274D5C /* Pods_TestingMFAuthAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingMFAuthAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8217B677ECA9E2946ABFD800 /* Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.release.xcconfig"; path = "Target Support Files/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A68EF0CCC3755C3B07651E63 /* Pods_TestingMFAuthAccess_TestingMFAuthAccessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingMFAuthAccess_TestingMFAuthAccessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE505E172A04F84B0094BAC8 /* TestingMFAuthAccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingMFAuthAccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE505E1A2A04F84B0094BAC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE505E232A04F84D0094BAC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE505E262A04F84D0094BAC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE505E282A04F84D0094BAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE505E2D2A04F84D0094BAC8 /* TestingMFAuthAccessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingMFAuthAccessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE505E312A04F84D0094BAC8 /* TestingMFAuthAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingMFAuthAccessTests.swift; sourceTree = "<group>"; };
+		AE505E372A04F84D0094BAC8 /* TestingMFAuthAccessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingMFAuthAccessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE505E3B2A04F84D0094BAC8 /* TestingMFAuthAccessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingMFAuthAccessUITests.swift; sourceTree = "<group>"; };
+		AE505E3D2A04F84D0094BAC8 /* TestingMFAuthAccessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingMFAuthAccessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE72CA162A068C6D00BD245A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AE72CA172A068C6D00BD245A /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		AEB884D52A0CCC95001B7832 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEB884D62A0CCC95001B7832 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F3D253CBA862FCF7E090C48A /* Pods-TestingMFAuthAccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingMFAuthAccess.debug.xcconfig"; path = "Target Support Files/Pods-TestingMFAuthAccess/Pods-TestingMFAuthAccess.debug.xcconfig"; sourceTree = "<group>"; };
+		FA28D3405948A99AB9ED565C /* Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF0BABF4120CC54C00F90D21 /* Pods-TestingMFAuthAccessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingMFAuthAccessTests.debug.xcconfig"; path = "Target Support Files/Pods-TestingMFAuthAccessTests/Pods-TestingMFAuthAccessTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE505E142A04F84B0094BAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543F68EE95E522529C8620FC /* Pods_TestingMFAuthAccess.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE505E2A2A04F84D0094BAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74CAF1D6ACBC9A31EAC1CE1 /* Pods_TestingMFAuthAccessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE505E342A04F84D0094BAC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8D63AE2B82761D044A5A1B /* Pods_TestingMFAuthAccess_TestingMFAuthAccessUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		101F983A28D0F55EFE0271AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3D253CBA862FCF7E090C48A /* Pods-TestingMFAuthAccess.debug.xcconfig */,
+				0F458C853737252B285E40A0 /* Pods-TestingMFAuthAccess.release.xcconfig */,
+				FA28D3405948A99AB9ED565C /* Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.debug.xcconfig */,
+				8217B677ECA9E2946ABFD800 /* Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.release.xcconfig */,
+				FF0BABF4120CC54C00F90D21 /* Pods-TestingMFAuthAccessTests.debug.xcconfig */,
+				639F89FB785C6C2293D2F9CA /* Pods-TestingMFAuthAccessTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2ECE7DE064889528F6510B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64740F9C8254FC7B67274D5C /* Pods_TestingMFAuthAccess.framework */,
+				A68EF0CCC3755C3B07651E63 /* Pods_TestingMFAuthAccess_TestingMFAuthAccessUITests.framework */,
+				5D00E6C05E10B4BB6A1197A2 /* Pods_TestingMFAuthAccessTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE505E0E2A04F84B0094BAC8 = {
+			isa = PBXGroup;
+			children = (
+				AE505E192A04F84B0094BAC8 /* TestingMFAuthAccess */,
+				AE505E302A04F84D0094BAC8 /* TestingMFAuthAccessTests */,
+				AE505E3A2A04F84D0094BAC8 /* TestingMFAuthAccessUITests */,
+				AE505E182A04F84B0094BAC8 /* Products */,
+				101F983A28D0F55EFE0271AE /* Pods */,
+				2ECE7DE064889528F6510B23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE505E182A04F84B0094BAC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE505E172A04F84B0094BAC8 /* TestingMFAuthAccess.app */,
+				AE505E2D2A04F84D0094BAC8 /* TestingMFAuthAccessTests.xctest */,
+				AE505E372A04F84D0094BAC8 /* TestingMFAuthAccessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE505E192A04F84B0094BAC8 /* TestingMFAuthAccess */ = {
+			isa = PBXGroup;
+			children = (
+				AE505E1A2A04F84B0094BAC8 /* AppDelegate.swift */,
+				AE505E232A04F84D0094BAC8 /* Assets.xcassets */,
+				AE505E252A04F84D0094BAC8 /* LaunchScreen.storyboard */,
+				AE505E282A04F84D0094BAC8 /* Info.plist */,
+				AE72CA162A068C6D00BD245A /* FirstViewController.swift */,
+				AE72CA172A068C6D00BD245A /* FirstViewController.xib */,
+				AEB884D52A0CCC95001B7832 /* ViewController.swift */,
+				AEB884D62A0CCC95001B7832 /* ViewController.xib */,
+			);
+			path = TestingMFAuthAccess;
+			sourceTree = "<group>";
+		};
+		AE505E302A04F84D0094BAC8 /* TestingMFAuthAccessTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE505E312A04F84D0094BAC8 /* TestingMFAuthAccessTests.swift */,
+			);
+			path = TestingMFAuthAccessTests;
+			sourceTree = "<group>";
+		};
+		AE505E3A2A04F84D0094BAC8 /* TestingMFAuthAccessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE505E3B2A04F84D0094BAC8 /* TestingMFAuthAccessUITests.swift */,
+				AE505E3D2A04F84D0094BAC8 /* TestingMFAuthAccessUITestsLaunchTests.swift */,
+			);
+			path = TestingMFAuthAccessUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE505E162A04F84B0094BAC8 /* TestingMFAuthAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE505E412A04F84D0094BAC8 /* Build configuration list for PBXNativeTarget "TestingMFAuthAccess" */;
+			buildPhases = (
+				DAFFEA42E352A3986643A3B4 /* [CP] Check Pods Manifest.lock */,
+				AE505E132A04F84B0094BAC8 /* Sources */,
+				AE505E142A04F84B0094BAC8 /* Frameworks */,
+				AE505E152A04F84B0094BAC8 /* Resources */,
+				441B8C842F00A333B654636A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestingMFAuthAccess;
+			productName = TestingMFAuthAccess;
+			productReference = AE505E172A04F84B0094BAC8 /* TestingMFAuthAccess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE505E2C2A04F84D0094BAC8 /* TestingMFAuthAccessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE505E442A04F84D0094BAC8 /* Build configuration list for PBXNativeTarget "TestingMFAuthAccessTests" */;
+			buildPhases = (
+				8A075970C9B77727D5506719 /* [CP] Check Pods Manifest.lock */,
+				AE505E292A04F84D0094BAC8 /* Sources */,
+				AE505E2A2A04F84D0094BAC8 /* Frameworks */,
+				AE505E2B2A04F84D0094BAC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE505E2F2A04F84D0094BAC8 /* PBXTargetDependency */,
+			);
+			name = TestingMFAuthAccessTests;
+			productName = TestingMFAuthAccessTests;
+			productReference = AE505E2D2A04F84D0094BAC8 /* TestingMFAuthAccessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE505E362A04F84D0094BAC8 /* TestingMFAuthAccessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE505E472A04F84D0094BAC8 /* Build configuration list for PBXNativeTarget "TestingMFAuthAccessUITests" */;
+			buildPhases = (
+				24D82DA9251E47D0BE135683 /* [CP] Check Pods Manifest.lock */,
+				AE505E332A04F84D0094BAC8 /* Sources */,
+				AE505E342A04F84D0094BAC8 /* Frameworks */,
+				AE505E352A04F84D0094BAC8 /* Resources */,
+				A204DD195635ED13ECE66264 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE505E392A04F84D0094BAC8 /* PBXTargetDependency */,
+			);
+			name = TestingMFAuthAccessUITests;
+			productName = TestingMFAuthAccessUITests;
+			productReference = AE505E372A04F84D0094BAC8 /* TestingMFAuthAccessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE505E0F2A04F84B0094BAC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AE505E162A04F84B0094BAC8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AE505E2C2A04F84D0094BAC8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE505E162A04F84B0094BAC8;
+					};
+					AE505E362A04F84D0094BAC8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE505E162A04F84B0094BAC8;
+					};
+				};
+			};
+			buildConfigurationList = AE505E122A04F84B0094BAC8 /* Build configuration list for PBXProject "TestingMFAuthAccess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE505E0E2A04F84B0094BAC8;
+			productRefGroup = AE505E182A04F84B0094BAC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE505E162A04F84B0094BAC8 /* TestingMFAuthAccess */,
+				AE505E2C2A04F84D0094BAC8 /* TestingMFAuthAccessTests */,
+				AE505E362A04F84D0094BAC8 /* TestingMFAuthAccessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE505E152A04F84B0094BAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB884D82A0CCC95001B7832 /* ViewController.xib in Resources */,
+				AE505E272A04F84D0094BAC8 /* LaunchScreen.storyboard in Resources */,
+				AE505E242A04F84D0094BAC8 /* Assets.xcassets in Resources */,
+				AE72CA192A068C6D00BD245A /* FirstViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE505E2B2A04F84D0094BAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE505E352A04F84D0094BAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24D82DA9251E47D0BE135683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		441B8C842F00A333B654636A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestingMFAuthAccess/Pods-TestingMFAuthAccess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestingMFAuthAccess/Pods-TestingMFAuthAccess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestingMFAuthAccess/Pods-TestingMFAuthAccess-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A075970C9B77727D5506719 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestingMFAuthAccessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A204DD195635ED13ECE66264 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests/Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAFFEA42E352A3986643A3B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestingMFAuthAccess-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE505E132A04F84B0094BAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE505E1B2A04F84B0094BAC8 /* AppDelegate.swift in Sources */,
+				AEB884D72A0CCC95001B7832 /* ViewController.swift in Sources */,
+				AE72CA182A068C6D00BD245A /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE505E292A04F84D0094BAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE505E322A04F84D0094BAC8 /* TestingMFAuthAccessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE505E332A04F84D0094BAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE505E3E2A04F84D0094BAC8 /* TestingMFAuthAccessUITestsLaunchTests.swift in Sources */,
+				AE505E3C2A04F84D0094BAC8 /* TestingMFAuthAccessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE505E2F2A04F84D0094BAC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE505E162A04F84B0094BAC8 /* TestingMFAuthAccess */;
+			targetProxy = AE505E2E2A04F84D0094BAC8 /* PBXContainerItemProxy */;
+		};
+		AE505E392A04F84D0094BAC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE505E162A04F84B0094BAC8 /* TestingMFAuthAccess */;
+			targetProxy = AE505E382A04F84D0094BAC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE505E252A04F84D0094BAC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE505E262A04F84D0094BAC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE505E3F2A04F84D0094BAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE505E402A04F84D0094BAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE505E422A04F84D0094BAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D253CBA862FCF7E090C48A /* Pods-TestingMFAuthAccess.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingMFAuthAccess/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.TestingMFAuthAccess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE505E432A04F84D0094BAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F458C853737252B285E40A0 /* Pods-TestingMFAuthAccess.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestingMFAuthAccess/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.TestingMFAuthAccess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE505E452A04F84D0094BAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0BABF4120CC54C00F90D21 /* Pods-TestingMFAuthAccessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.TestingMFAuthAccessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingMFAuthAccess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestingMFAuthAccess";
+			};
+			name = Debug;
+		};
+		AE505E462A04F84D0094BAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639F89FB785C6C2293D2F9CA /* Pods-TestingMFAuthAccessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.TestingMFAuthAccessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingMFAuthAccess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestingMFAuthAccess";
+			};
+			name = Release;
+		};
+		AE505E482A04F84D0094BAC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA28D3405948A99AB9ED565C /* Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.TestingMFAuthAccessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestingMFAuthAccess;
+			};
+			name = Debug;
+		};
+		AE505E492A04F84D0094BAC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8217B677ECA9E2946ABFD800 /* Pods-TestingMFAuthAccess-TestingMFAuthAccessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.TestingMFAuthAccessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestingMFAuthAccess;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE505E122A04F84B0094BAC8 /* Build configuration list for PBXProject "TestingMFAuthAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE505E3F2A04F84D0094BAC8 /* Debug */,
+				AE505E402A04F84D0094BAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE505E412A04F84D0094BAC8 /* Build configuration list for PBXNativeTarget "TestingMFAuthAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE505E422A04F84D0094BAC8 /* Debug */,
+				AE505E432A04F84D0094BAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE505E442A04F84D0094BAC8 /* Build configuration list for PBXNativeTarget "TestingMFAuthAccessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE505E452A04F84D0094BAC8 /* Debug */,
+				AE505E462A04F84D0094BAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE505E472A04F84D0094BAC8 /* Build configuration list for PBXNativeTarget "TestingMFAuthAccessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE505E482A04F84D0094BAC8 /* Debug */,
+				AE505E492A04F84D0094BAC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE505E0F2A04F84B0094BAC8 /* Project object */;
+}

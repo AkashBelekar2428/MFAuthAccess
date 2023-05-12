@@ -1,0 +1,16 @@
+PODS:
+  - MFAuthAccess (1.1.4)
+
+DEPENDENCIES:
+  - MFAuthAccess
+
+SPEC REPOS:
+  trunk:
+    - MFAuthAccess
+
+SPEC CHECKSUMS:
+  MFAuthAccess: 43724022fb166d8c33d6fb13ff69800a0423e2f8
+
+PODFILE CHECKSUM: ede66aa405008b8d8283be7165f82ff30602fedd
+
+COCOAPODS: 1.12.1

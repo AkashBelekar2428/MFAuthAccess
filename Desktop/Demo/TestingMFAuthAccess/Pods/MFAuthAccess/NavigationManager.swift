@@ -11,7 +11,6 @@ public protocol showNextViewDelegate{
 }
 
 public class NavigationManager{
-      
     func showNextView(view:UIView){
        
     }

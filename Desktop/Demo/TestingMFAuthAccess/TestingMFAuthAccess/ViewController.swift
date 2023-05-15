@@ -9,31 +9,37 @@ import UIKit
 import MFAuthAccess
 
 class ViewController: UIViewController {
+    
     //MARK: IBOutlets
     @IBOutlet weak var containerView:UIView!
     
     //MARK: variables
-    lazy var  myUtility = Utility()
     lazy var emailAddress = Email_Address()
     lazy var mobileNumber = Mobile_Number()
     lazy var pinView = PINView()
-    lazy  var authenticationLogin = AuthenticationLogIn()
-    
-    let email = ""
-    let mobile = ""
+    var authenticationLogin = AuthenticationLogIn()
         
     //MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-//        return
+        
+        //MARK: init Controllers
         emailAddress = Email_Address.init()
         mobileNumber = Mobile_Number.init()
         pinView = PINView.init()
         authenticationLogin = AuthenticationLogIn.init()
+        
+        //MARK: Assign ViewController to present show alert msg
+        emailAddress.emailController = self
+        mobileNumber.mobileController = self
+        pinView.pinController = self
+        authenticationLogin.authController = self
        
+        //MARK: Protocol Delegates
         emailAddress.delegate = self
         mobileNumber.delegate = self
         authenticationLogin.delegate = self
+        pinView.delegate = self
       
         containerView.addSubview(mobileNumber)
     }
@@ -41,7 +47,8 @@ class ViewController: UIViewController {
     //MARK: viewDidAppear
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        return
+        
+        //MARK: Set Frames
         emailAddress.frame = containerView.bounds
         mobileNumber.frame = containerView.bounds
         pinView.frame = containerView.bounds
@@ -67,7 +74,7 @@ class ViewController: UIViewController {
         //MARK: MobileNumberConfiguration
         let mobileConfig = AuthenticationConfiguration()
         mobileConfig.backgroundColor = UIColor.lightGray
-        mobileConfig.textColor = .darkGray
+        mobileConfig.textColor = .black
         mobileConfig.font = .systemFont(ofSize: 18)
         mobileConfig.text = "LogInn"
         mobileConfig.logo = UIImage(named: "fb")!
@@ -75,6 +82,7 @@ class ViewController: UIViewController {
         mobileConfig.placeHolderText = "Enter Your MobileNumber"
         mobileConfig.placeHolderFont = .systemFont(ofSize: 14)
         mobileConfig.imgIconColor = .gray
+        mobileConfig.placeHolderTextColor = .black
         mobileConfig.viewType = .mobile
         
         self.mobileNumber.setThemeWithMobileConfiguration(config: mobileConfig)
@@ -88,7 +96,7 @@ class ViewController: UIViewController {
         pinViewConfig.textAlignment = .left
         pinViewConfig.backgroundColor = .gray
         pinViewConfig.text = "LogIn"
-        pinViewConfig.pinText = "Please enter  your 6-Digit PIN."
+        pinViewConfig.pinText = "Please enter your 6-Digit PIN."
         pinViewConfig.viewType = .pinView
         
         self.pinView.setThemeWithPINConfiguration(config: pinViewConfig)
@@ -117,50 +125,28 @@ class ViewController: UIViewController {
 
 //MARK: MobileNumber
 extension ViewController:MobileNumberDelegate{
-    func sendPINAction() {
-        if myUtility.isPhoneValide(phone: mobileNumber.tfMobileNum.text!){
-            print("Success")
-        }
-        else
-        {
-            myUtility.showAlter(title: "Phone Number", msg: "Invalide Phone Number", action: "OK", viewController: self)
-        }
+    func sendPINAction(mobileNumber: String) {
+        
     }
 }
 
 //MARK: EmailAddress
 extension ViewController:EmailAddressDelegate{
-    func sendPINBtnAction() {
-        if myUtility.isValideEmail(email: emailAddress.tfEmail.text!)
-        {
-           print("Success")
-        }
-        else
-        {
-            myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self)
-        }
+    func sendPINBtnAction(email: String) {
+        
     }
 }
 
 //MARK: AuthenticationLogInDelegate
 extension ViewController:AuthenticationLogInDelegate{
-    func validateBtnAction(username: String, password: String) {
-        if  myUtility.isValidateUsername(username: authenticationLogin.tfUsername.text!){
-            if myUtility.isPasswordValide(password: authenticationLogin.tfPassword.text!){
-              print("Success")
-          } else{
-              myUtility.showAlter(title: "PASSWORD", msg: "Invalide Password", action: "OK", viewController: self)
-          }
-      }
-      else{
-          myUtility.showAlter(title: "USERNAME", msg: "Invalide Username", action: "OK", viewController: self)
-      }
+    func sendPinBtnAction(email: String, password: String) {
+        
     }
 }
 
 //MARK: PINViewDelegate
 extension ViewController:PINViewDelegate{
-    func validateBtnAction() {
-        print("")
+    func validateBtnAction(pinNumber: String) {
+        
     }
 }

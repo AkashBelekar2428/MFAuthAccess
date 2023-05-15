@@ -10,7 +10,7 @@ import Foundation
 
 //MARK: Protocol MobileNumberDelegate
 public protocol MobileNumberDelegate{
-    func sendPINAction()
+    func sendPINAction(mobileNumber:String)
 }
 
 public class Mobile_Number:UIView {
@@ -31,6 +31,8 @@ public class Mobile_Number:UIView {
     let nibName = "Mobile_Number"
     public var delegate:MobileNumberDelegate?
     public var mobileConfig = AuthenticationConfiguration()
+    var myUtility = Utility()
+    public weak var mobileController: UIViewController?
     
     
     //MARK: System methods
@@ -44,6 +46,23 @@ public class Mobile_Number:UIView {
         commonInit()
     }
     
+
+    //MARK: Custom methods
+    func commonInit() {
+        guard let view = loadViewFromNib() else { return }
+        view.frame = self.bounds
+        tfMobileNum.delegate = self
+        setupToolBar()
+        self.addSubview(view)
+    }
+    
+    func loadViewFromNib() -> UIView? {
+        let bundel = Bundle(for: Mobile_Number.self)
+        let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
+        return nib
+    }
+    
+    //MARK: Configurations
   public func setThemeWithMobileConfiguration(config:AuthenticationConfiguration)
     {
         self.imgHeaderLogo.image = config.logo
@@ -59,23 +78,7 @@ public class Mobile_Number:UIView {
         self.imgReminder.tintColor = config.imgIconColor
     }
     
-    //MARK: Custom methods
-    func commonInit() {
-        guard let view = loadViewFromNib() else { return }
-        view.frame = self.bounds
-        tfMobileNum.delegate = self
-        setupToolBar()
-//        copyAndPasteNumber()
-        self.addSubview(view)
-    }
-    
-    func loadViewFromNib() -> UIView? {
-        let bundel = Bundle(for: Mobile_Number.self)
-        let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
-        return nib
-    }
-    
-    
+    //MARK: Keyboard Done Button
     func setupToolBar(){
         let barBtn = UIToolbar()
         let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneBtnTapped(_ :)))
@@ -84,31 +87,27 @@ public class Mobile_Number:UIView {
         barBtn.sizeToFit()
         tfMobileNum.inputAccessoryView = barBtn
     }
+    
     @objc func doneBtnTapped(_ tap:UITapGestureRecognizer){
         viewMobile.endEditing(true)
     }
     
-    func copyAndPasteNumber(){
-        guard let textFieldText = tfMobileNum.text else { return }
-        let regex = try! NSRegularExpression(pattern: "\\d+")
-        let matches = regex.matches(in: textFieldText, range: NSRange(textFieldText.startIndex..., in: textFieldText))
-        let numbersOnly = matches.map { String(textFieldText[Range($0.range, in: textFieldText)!]) }.joined()
-        UIPasteboard.general.string = numbersOnly
-    }
-    
     //MARK: IBAction
-    @IBAction func mobileValidations(_ sender:UIButton){
-        delegate?.sendPINAction()
-        
+    @IBAction func mobileValidations(_ sender:UIButton)
+    {
+        if myUtility.isPhoneValide(phone: (tfMobileNum.text?.trimmingCharacters(in: .whitespaces))!){
+            delegate?.sendPINAction(mobileNumber: (tfMobileNum.text?.trimmingCharacters(in: .whitespaces))!)
+        }
+       else
+        {
+           myUtility.showAlter(title: "MOBILE NUMBER", msg: "Invalide Mobile Number", action: "OK", viewController: self.mobileController!)
+       }
     }
 }
 
+    //MARK: UITextFieldDelegate
 extension Mobile_Number:UITextFieldDelegate{
     
-    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == tfMobileNum{
             
@@ -122,6 +121,7 @@ extension Mobile_Number:UITextFieldDelegate{
             return true
         }
     }
+    
     public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

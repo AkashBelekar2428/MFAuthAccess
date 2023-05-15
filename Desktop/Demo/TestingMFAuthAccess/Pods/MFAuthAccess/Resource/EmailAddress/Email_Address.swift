@@ -9,7 +9,7 @@ import UIKit
 
 //MARK: Protocol EmailAddressDelegate
 public protocol EmailAddressDelegate{
-    func sendPINBtnAction()
+    func sendPINBtnAction(email:String)
 }
 
 public class Email_Address: UIView {
@@ -29,7 +29,10 @@ public class Email_Address: UIView {
     let nibName = "Email_Address"
     public var pinViewIns = PINView()
     public var delegate:EmailAddressDelegate?
-    public var emailConfig = AuthenticationConfiguration()    
+    public var emailConfig = AuthenticationConfiguration()
+    lazy var  myUtility = Utility()
+    public weak var emailController: UIViewController?
+
     
     //MARK: System methods
     required init?(coder aDecoder: NSCoder) {
@@ -57,6 +60,7 @@ public class Email_Address: UIView {
         return nib
     }
     
+    //MARK: Configurations
     public func setThemeWithEmailConfiguration(config:AuthenticationConfiguration){
         self.imgHeaderLogo.image = config.logo
         self.lblHeaderLogin.textColor = config.textColor
@@ -71,13 +75,21 @@ public class Email_Address: UIView {
         self.lblEmailAddress.textColor = config.textColor
     }
     
-    
     //MARK: IBAction
     @IBAction func sendPINClicked(_ sender:UIButton){
-        delegate?.sendPINBtnAction()
+        
+        if myUtility.isValideEmail(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
+        {
+            delegate?.sendPINBtnAction(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
+        }
+        else
+        {
+            myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self.emailController!)
+        }
     }
 }
 
+   //MARK: UITextFieldDelegate
 extension Email_Address:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

@@ -12,6 +12,7 @@ public class Utility:UIViewController {
     //MARK: Singletone
     static let shared = Utility()
     
+    //MARK: Show Alert For Single Action
     public func showAlter(title:String,msg:String,action:String,viewController:UIViewController) {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
         let action = UIAlertAction(title: action, style: .default,handler:{ _ in
@@ -21,6 +22,7 @@ public class Utility:UIViewController {
         viewController.present(alert, animated: true)
     }
     
+    //MARK: Show Alert For Double Action
     public func showAltersActions(title:String, msg:String, firstAction:String, secondAction:String, firstComplition:@escaping () -> Void,secondComplition:@escaping () -> Void, viewController: UIViewController){
         
         let alter = UIAlertController(title: title, message: msg, preferredStyle: .alert)

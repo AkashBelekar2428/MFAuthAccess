@@ -9,7 +9,7 @@ import UIKit
 
 //MARK: Protocol PINViewDelegate
 public protocol PINViewDelegate{
-    func validateBtnAction()
+    func validateBtnAction(pinNumber: String)
 }
 protocol GenericPINViewDelegate : AnyObject {
     func pinViewDelegate(pinValue: String)
@@ -17,6 +17,7 @@ protocol GenericPINViewDelegate : AnyObject {
 
 public class PINView: UIView{
     
+    //MARK: IBOutlets
     @IBOutlet weak public var imgHeaderLogo:UIImageView!
     @IBOutlet weak public var lblHeaderLogin:UILabel!
     @IBOutlet weak public var viewHeader:UIView!
@@ -41,6 +42,8 @@ public class PINView: UIView{
     public var delegate:PINViewDelegate?
     weak var delegatePinView: GenericPINViewDelegate?
     public var pinViewConfig = AuthenticationConfiguration()
+    public var myUtility = Utility()
+    public weak var pinController: UIViewController?
     
     
     //MARK: System methods
@@ -81,9 +84,11 @@ public class PINView: UIView{
         txtSixth.textColor = .black
         
         btnVerifyTextField.isUserInteractionEnabled = true
+        
         let longPressGest = UILongPressGestureRecognizer.init(target: self, action: #selector(self.LongPressRecogniser(_:)))
         btnVerifyTextField.addGestureRecognizer(longPressGest)
     }
+    
     @objc func LongPressRecogniser(_ gesture : UILongPressGestureRecognizer)
     {
         if gesture.state == .began
@@ -262,6 +267,7 @@ public class PINView: UIView{
         return nib
     }
     
+    //MARK: Configurations
     public func setThemeWithPINConfiguration(config:AuthenticationConfiguration)
     {
         self.viewHeader.backgroundColor = config.backgroundColor
@@ -275,7 +281,13 @@ public class PINView: UIView{
     //MARK: IBAction
     @IBAction func sendPinAction(_ sender:UIButton)
     {
-        delegate?.validateBtnAction()
+        if pinVarTf.text != nil && pinVarTf.text != "" && pinVarTf.text?.count == 6
+        {
+            delegate?.validateBtnAction(pinNumber: (pinVarTf.text?.trimmingCharacters(in: .whitespaces))!)
+        }
+        else {
+            myUtility.showAlter(title: "PIN", msg: "Invalide Pin", action: "OK", viewController: self.pinController!)
+        }
     }
     
     @IBAction func actionTapToEnterPin()
@@ -287,6 +299,7 @@ public class PINView: UIView{
     }
 }
 
+//MARK: UITextViewDelegate, UITextFieldDelegate
 extension PINView: UITextViewDelegate, UITextFieldDelegate{
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == pinVarTf
@@ -394,15 +407,13 @@ extension PINView: UITextViewDelegate, UITextFieldDelegate{
                 if pinVarTf.text != "" {
                     self.delegatePinView?.pinViewDelegate(pinValue: pinVarTf.fullTextWith(range: range, replacementString: string)!)
                 }
-                
+    
                 return true
             }
-            
         }
         else{
             return true
         }
-        
     }
 }
 

@@ -9,7 +9,7 @@ import UIKit
 
 //MARK: Protocol AuthenticationLogInDelegate
 public protocol AuthenticationLogInDelegate{
-    func validateBtnAction()
+    func sendPinBtnAction(email: String, password: String)
 }
 
 public class AuthenticationLogIn: UIView {
@@ -19,7 +19,7 @@ public class AuthenticationLogIn: UIView {
     @IBOutlet weak public var lblHeaderLogin:UILabel!
     @IBOutlet weak public var viewHeader:UIView!
     @IBOutlet weak public var lblAuthType:UILabel!
-    @IBOutlet weak public var tfUsername:UITextField!
+    @IBOutlet weak public var tfEmail:UITextField!
     @IBOutlet weak public var tfPassword:UITextField!
     @IBOutlet weak public var btnValidate:UIButton!
     @IBOutlet weak public var imgEye:UIImageView!
@@ -30,6 +30,8 @@ public class AuthenticationLogIn: UIView {
     let nibName = "AuthenticationLogIn"
     public var delegate:AuthenticationLogInDelegate?
     public var authConfig = AuthenticationConfiguration()
+    var myUtility = Utility()
+    public weak var authController: UIViewController?
     
     
     //MARK: System methods
@@ -48,7 +50,7 @@ public class AuthenticationLogIn: UIView {
     func commonInit() {
         guard let view = loadViewFromNib() else { return }
         view.frame = self.bounds
-        tfUsername.delegate = self
+        tfEmail.delegate = self
         tfPassword.delegate = self
         self.addSubview(view)
     }
@@ -59,6 +61,7 @@ public class AuthenticationLogIn: UIView {
         return nib
     }
     
+    //MARK: Configurations
     public func setThemWithAuthConfiguration(config:AuthenticationConfiguration)
     {
         self.imgHeaderLogo.image = config.logo
@@ -71,9 +74,9 @@ public class AuthenticationLogIn: UIView {
         self.btnValidate.backgroundColor = config.backgroundColor
         self.lblAuthType.text = config.authType
         self.lblPassword.font = config.lblSecondFiledFont
-        self.tfUsername.placeholder = config.placeHolderText
-        self.tfUsername.font = config.placeHolderFont
-        self.tfUsername.textColor = config.textColor
+        self.tfEmail.placeholder = config.placeHolderText
+        self.tfEmail.font = config.placeHolderFont
+        self.tfEmail.textColor = config.textColor
         self.tfPassword.placeholder = config.placeHolderPasswordText
         self.tfPassword.font = config.placeHolderFont
         self.tfPassword.textColor = config.textColor
@@ -82,11 +85,26 @@ public class AuthenticationLogIn: UIView {
     }
     
     //MARK: IBAction
-    @IBAction func validateBtnAction(_ sender:UIButton){
-        delegate?.validateBtnAction()
+    @IBAction func pinSendBtnAction(_ sender:UIButton){
+        if myUtility.isValideEmail(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
+        {
+            if myUtility.isPasswordValide(password: (tfPassword.text?.trimmingCharacters(in: .whitespaces))!)
+            {
+                delegate?.sendPinBtnAction(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!, password: (tfPassword.text?.trimmingCharacters(in: .whitespaces))!)
+            }
+            else
+            {
+                myUtility.showAlter(title: "PASSWORD", msg: "Invalide Password", action: "OK", viewController: self.authController!)
+            }
+        }
+        else
+        {
+            myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self.authController!)
+        }
     }
 }
 
+//MARK: UITextFieldDelegate
 extension AuthenticationLogIn:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

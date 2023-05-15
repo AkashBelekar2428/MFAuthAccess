@@ -17,8 +17,8 @@
                 <outlet property="lblAuthType" destination="AaF-d0-gjz" id="eUP-TV-vsv"/>
                 <outlet property="lblHeaderLogin" destination="d4H-yb-E0l" id="gtH-Hn-Jf9"/>
                 <outlet property="lblPassword" destination="4qr-LN-8Zy" id="gtt-bz-CeL"/>
+                <outlet property="tfEmail" destination="OkY-Sc-yOA" id="0WO-uf-fJw"/>
                 <outlet property="tfPassword" destination="j4N-ig-wGz" id="cK2-Hi-2Xi"/>
-                <outlet property="tfUsername" destination="OkY-Sc-yOA" id="82p-89-OX8"/>
                 <outlet property="viewHeader" destination="h5J-Iy-U6U" id="nQc-b0-sAb"/>
             </connections>
         </placeholder>
@@ -75,7 +75,7 @@
                                 <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                             </buttonConfiguration>
                             <connections>
-                                <action selector="validateBtnAction:" destination="-1" eventType="touchUpInside" id="1Mt-Wn-34q"/>
+                                <action selector="pinSendBtnAction:" destination="-1" eventType="touchUpInside" id="QZX-Pc-hKf"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAf-xU-TSz">

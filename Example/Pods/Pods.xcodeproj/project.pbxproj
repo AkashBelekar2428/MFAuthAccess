@@ -14,23 +14,17 @@
 		6B2D81FFB10342BC8B44BD4046E9D0BB /* Pods-MFAuthAccess_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64221BB0ECBDC07BEE6E405C8A8F0103 /* Pods-MFAuthAccess_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A27A208A472D6A1E6B9A18D627E5C621 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		AC0B30BABD0BDD4533DEB074686F5ADF /* Pods-MFAuthAccess_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61143E79B90471C04C9D74E1155B2A /* Pods-MFAuthAccess_Example-dummy.m */; };
-		AE8931F02A04D2AF00B9CA71 /* EmailAddress_Password.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931D82A04D2AE00B9CA71 /* EmailAddress_Password.xib */; };
-		AE8931F12A04D2AF00B9CA71 /* EmailAddress_Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931D92A04D2AE00B9CA71 /* EmailAddress_Password.swift */; };
-		AE8931F22A04D2AF00B9CA71 /* Email_Address.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931DB2A04D2AE00B9CA71 /* Email_Address.xib */; };
-		AE8931F32A04D2AF00B9CA71 /* Email_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931DC2A04D2AE00B9CA71 /* Email_Address.swift */; };
-		AE8931F42A04D2AF00B9CA71 /* Email_PIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931DE2A04D2AF00B9CA71 /* Email_PIN.swift */; };
-		AE8931F52A04D2AF00B9CA71 /* Email_PIN.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931DF2A04D2AF00B9CA71 /* Email_PIN.xib */; };
-		AE8931F62A04D2AF00B9CA71 /* Mobile_PIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931E12A04D2AF00B9CA71 /* Mobile_PIN.swift */; };
-		AE8931F72A04D2AF00B9CA71 /* Mobile_PIN.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931E22A04D2AF00B9CA71 /* Mobile_PIN.xib */; };
-		AE8931F82A04D2AF00B9CA71 /* Username_Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931E42A04D2AF00B9CA71 /* Username_Password.swift */; };
-		AE8931F92A04D2AF00B9CA71 /* Username_Password.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931E52A04D2AF00B9CA71 /* Username_Password.xib */; };
-		AE8931FA2A04D2AF00B9CA71 /* _6DigitPIN.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931E72A04D2AF00B9CA71 /* _6DigitPIN.xib */; };
-		AE8931FB2A04D2AF00B9CA71 /* _6DigitPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931E82A04D2AF00B9CA71 /* _6DigitPIN.swift */; };
-		AE8931FC2A04D2AF00B9CA71 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931E92A04D2AF00B9CA71 /* Utility.swift */; };
-		AE8931FD2A04D2AF00B9CA71 /* Google_Authenticator.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931EB2A04D2AF00B9CA71 /* Google_Authenticator.xib */; };
-		AE8931FE2A04D2AF00B9CA71 /* Google_Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931EC2A04D2AF00B9CA71 /* Google_Authenticator.swift */; };
-		AE8931FF2A04D2AF00B9CA71 /* Mobile_Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8931EE2A04D2AF00B9CA71 /* Mobile_Number.swift */; };
-		AE8932002A04D2AF00B9CA71 /* Mobile_Number.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8931EF2A04D2AF00B9CA71 /* Mobile_Number.xib */; };
+		AE8873AB2A12073F00285682 /* AuthenticationLogIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8873A02A12073E00285682 /* AuthenticationLogIn.xib */; };
+		AE8873AC2A12073F00285682 /* Mobile_Number.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8873A12A12073E00285682 /* Mobile_Number.xib */; };
+		AE8873AD2A12073F00285682 /* AuthenticationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A22A12073E00285682 /* AuthenticationConfiguration.swift */; };
+		AE8873AE2A12073F00285682 /* AuthenticationLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A32A12073F00285682 /* AuthenticationLogIn.swift */; };
+		AE8873AF2A12073F00285682 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A42A12073F00285682 /* Utility.swift */; };
+		AE8873B02A12073F00285682 /* Email_Address.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8873A52A12073F00285682 /* Email_Address.xib */; };
+		AE8873B12A12073F00285682 /* Email_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A62A12073F00285682 /* Email_Address.swift */; };
+		AE8873B22A12073F00285682 /* Mobile_Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A72A12073F00285682 /* Mobile_Number.swift */; };
+		AE8873B32A12073F00285682 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A82A12073F00285682 /* NavigationManager.swift */; };
+		AE8873B42A12073F00285682 /* PINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A92A12073F00285682 /* PINView.swift */; };
+		AE8873B52A12073F00285682 /* PINView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8873AA2A12073F00285682 /* PINView.xib */; };
 		E942C51AB9A993A9CD02CC5892DFA8E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F09FA9BC31EAD905BC2819220B041AB0 /* Pods-MFAuthAccess_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5242A092E0B690F7A59D3EF34A91D9D1 /* Pods-MFAuthAccess_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -79,23 +73,17 @@
 		A20DD8DD1E0C3957F378E507336189E8 /* Pods_MFAuthAccess_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFAuthAccess_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A476212F746E53759400EBADC5C3F386 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9D07F48ACAE39A6875E66D3D7AFBC9A /* Pods-MFAuthAccess_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFAuthAccess_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AE8931D82A04D2AE00B9CA71 /* EmailAddress_Password.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailAddress_Password.xib; sourceTree = "<group>"; };
-		AE8931D92A04D2AE00B9CA71 /* EmailAddress_Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailAddress_Password.swift; sourceTree = "<group>"; };
-		AE8931DB2A04D2AE00B9CA71 /* Email_Address.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Email_Address.xib; sourceTree = "<group>"; };
-		AE8931DC2A04D2AE00B9CA71 /* Email_Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email_Address.swift; sourceTree = "<group>"; };
-		AE8931DE2A04D2AF00B9CA71 /* Email_PIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email_PIN.swift; sourceTree = "<group>"; };
-		AE8931DF2A04D2AF00B9CA71 /* Email_PIN.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Email_PIN.xib; sourceTree = "<group>"; };
-		AE8931E12A04D2AF00B9CA71 /* Mobile_PIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile_PIN.swift; sourceTree = "<group>"; };
-		AE8931E22A04D2AF00B9CA71 /* Mobile_PIN.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_PIN.xib; sourceTree = "<group>"; };
-		AE8931E42A04D2AF00B9CA71 /* Username_Password.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Username_Password.swift; sourceTree = "<group>"; };
-		AE8931E52A04D2AF00B9CA71 /* Username_Password.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Username_Password.xib; sourceTree = "<group>"; };
-		AE8931E72A04D2AF00B9CA71 /* _6DigitPIN.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _6DigitPIN.xib; sourceTree = "<group>"; };
-		AE8931E82A04D2AF00B9CA71 /* _6DigitPIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _6DigitPIN.swift; sourceTree = "<group>"; };
-		AE8931E92A04D2AF00B9CA71 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		AE8931EB2A04D2AF00B9CA71 /* Google_Authenticator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Google_Authenticator.xib; sourceTree = "<group>"; };
-		AE8931EC2A04D2AF00B9CA71 /* Google_Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Google_Authenticator.swift; sourceTree = "<group>"; };
-		AE8931EE2A04D2AF00B9CA71 /* Mobile_Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile_Number.swift; sourceTree = "<group>"; };
-		AE8931EF2A04D2AF00B9CA71 /* Mobile_Number.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
+		AE8873A02A12073E00285682 /* AuthenticationLogIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationLogIn.xib; sourceTree = "<group>"; };
+		AE8873A12A12073E00285682 /* Mobile_Number.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
+		AE8873A22A12073E00285682 /* AuthenticationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationConfiguration.swift; sourceTree = "<group>"; };
+		AE8873A32A12073F00285682 /* AuthenticationLogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationLogIn.swift; sourceTree = "<group>"; };
+		AE8873A42A12073F00285682 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = "../../../TestingMFAuthAccess /Pods/MFAuthAccess/Resource/Utility.swift"; sourceTree = "<group>"; };
+		AE8873A52A12073F00285682 /* Email_Address.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Email_Address.xib; sourceTree = "<group>"; };
+		AE8873A62A12073F00285682 /* Email_Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email_Address.swift; sourceTree = "<group>"; };
+		AE8873A72A12073F00285682 /* Mobile_Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile_Number.swift; sourceTree = "<group>"; };
+		AE8873A82A12073F00285682 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		AE8873A92A12073F00285682 /* PINView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINView.swift; sourceTree = "<group>"; };
+		AE8873AA2A12073F00285682 /* PINView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PINView.xib; sourceTree = "<group>"; };
 		BB6D1FF1FDCAFDDA91E4E3E32402A434 /* MFAuthAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MFAuthAccess-umbrella.h"; sourceTree = "<group>"; };
 		C5D4F5B998CC08E743009CD191ABA951 /* Pods-MFAuthAccess_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MFAuthAccess_Example.modulemap"; sourceTree = "<group>"; };
 		CAF7E951D46E9D662B5DF47B16836CD0 /* MFAuthAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MFAuthAccess.modulemap; sourceTree = "<group>"; };
@@ -229,89 +217,19 @@
 		AE8931D62A04D16C00B9CA71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				AE8931E62A04D2AF00B9CA71 /* 6DigitPIN */,
-				AE8931DA2A04D2AE00B9CA71 /* EmailAddress */,
-				AE8931D72A04D2AE00B9CA71 /* EmailPassword */,
-				AE8931DD2A04D2AF00B9CA71 /* EmailPIN */,
-				AE8931EA2A04D2AF00B9CA71 /* GoogleAuthenticators */,
-				AE8931ED2A04D2AF00B9CA71 /* MobileNumber */,
-				AE8931E02A04D2AF00B9CA71 /* MobilePIN */,
-				AE8931E32A04D2AF00B9CA71 /* UsernamePassword */,
-				AE8931E92A04D2AF00B9CA71 /* Utility.swift */,
+				AE8873A32A12073F00285682 /* AuthenticationLogIn.swift */,
+				AE8873A02A12073E00285682 /* AuthenticationLogIn.xib */,
+				AE8873A62A12073F00285682 /* Email_Address.swift */,
+				AE8873A52A12073F00285682 /* Email_Address.xib */,
+				AE8873A72A12073F00285682 /* Mobile_Number.swift */,
+				AE8873A12A12073E00285682 /* Mobile_Number.xib */,
+				AE8873A92A12073F00285682 /* PINView.swift */,
+				AE8873AA2A12073F00285682 /* PINView.xib */,
+				AE8873A42A12073F00285682 /* Utility.swift */,
+				AE8873A22A12073E00285682 /* AuthenticationConfiguration.swift */,
+				AE8873A82A12073F00285682 /* NavigationManager.swift */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		AE8931D72A04D2AE00B9CA71 /* EmailPassword */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931D82A04D2AE00B9CA71 /* EmailAddress_Password.xib */,
-				AE8931D92A04D2AE00B9CA71 /* EmailAddress_Password.swift */,
-			);
-			path = EmailPassword;
-			sourceTree = "<group>";
-		};
-		AE8931DA2A04D2AE00B9CA71 /* EmailAddress */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931DB2A04D2AE00B9CA71 /* Email_Address.xib */,
-				AE8931DC2A04D2AE00B9CA71 /* Email_Address.swift */,
-			);
-			path = EmailAddress;
-			sourceTree = "<group>";
-		};
-		AE8931DD2A04D2AF00B9CA71 /* EmailPIN */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931DE2A04D2AF00B9CA71 /* Email_PIN.swift */,
-				AE8931DF2A04D2AF00B9CA71 /* Email_PIN.xib */,
-			);
-			path = EmailPIN;
-			sourceTree = "<group>";
-		};
-		AE8931E02A04D2AF00B9CA71 /* MobilePIN */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931E12A04D2AF00B9CA71 /* Mobile_PIN.swift */,
-				AE8931E22A04D2AF00B9CA71 /* Mobile_PIN.xib */,
-			);
-			path = MobilePIN;
-			sourceTree = "<group>";
-		};
-		AE8931E32A04D2AF00B9CA71 /* UsernamePassword */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931E42A04D2AF00B9CA71 /* Username_Password.swift */,
-				AE8931E52A04D2AF00B9CA71 /* Username_Password.xib */,
-			);
-			path = UsernamePassword;
-			sourceTree = "<group>";
-		};
-		AE8931E62A04D2AF00B9CA71 /* 6DigitPIN */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931E72A04D2AF00B9CA71 /* _6DigitPIN.xib */,
-				AE8931E82A04D2AF00B9CA71 /* _6DigitPIN.swift */,
-			);
-			path = 6DigitPIN;
-			sourceTree = "<group>";
-		};
-		AE8931EA2A04D2AF00B9CA71 /* GoogleAuthenticators */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931EB2A04D2AF00B9CA71 /* Google_Authenticator.xib */,
-				AE8931EC2A04D2AF00B9CA71 /* Google_Authenticator.swift */,
-			);
-			path = GoogleAuthenticators;
-			sourceTree = "<group>";
-		};
-		AE8931ED2A04D2AF00B9CA71 /* MobileNumber */ = {
-			isa = PBXGroup;
-			children = (
-				AE8931EE2A04D2AF00B9CA71 /* Mobile_Number.swift */,
-				AE8931EF2A04D2AF00B9CA71 /* Mobile_Number.xib */,
-			);
-			path = MobileNumber;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -439,7 +357,7 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					90159773EF36E692D3AF65C501C2A806 = {
-						LastSwiftMigration = 1420;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -475,14 +393,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8931F92A04D2AF00B9CA71 /* Username_Password.xib in Resources */,
-				AE8931F02A04D2AF00B9CA71 /* EmailAddress_Password.xib in Resources */,
-				AE8932002A04D2AF00B9CA71 /* Mobile_Number.xib in Resources */,
-				AE8931F72A04D2AF00B9CA71 /* Mobile_PIN.xib in Resources */,
-				AE8931F52A04D2AF00B9CA71 /* Email_PIN.xib in Resources */,
-				AE8931FD2A04D2AF00B9CA71 /* Google_Authenticator.xib in Resources */,
-				AE8931FA2A04D2AF00B9CA71 /* _6DigitPIN.xib in Resources */,
-				AE8931F22A04D2AF00B9CA71 /* Email_Address.xib in Resources */,
+				AE8873B52A12073F00285682 /* PINView.xib in Resources */,
+				AE8873AC2A12073F00285682 /* Mobile_Number.xib in Resources */,
+				AE8873AB2A12073F00285682 /* AuthenticationLogIn.xib in Resources */,
+				AE8873B02A12073F00285682 /* Email_Address.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,16 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8931F82A04D2AF00B9CA71 /* Username_Password.swift in Sources */,
-				AE8931F42A04D2AF00B9CA71 /* Email_PIN.swift in Sources */,
-				AE8931FB2A04D2AF00B9CA71 /* _6DigitPIN.swift in Sources */,
-				AE8931F62A04D2AF00B9CA71 /* Mobile_PIN.swift in Sources */,
-				AE8931FF2A04D2AF00B9CA71 /* Mobile_Number.swift in Sources */,
-				AE8931FC2A04D2AF00B9CA71 /* Utility.swift in Sources */,
-				AE8931FE2A04D2AF00B9CA71 /* Google_Authenticator.swift in Sources */,
-				AE8931F12A04D2AF00B9CA71 /* EmailAddress_Password.swift in Sources */,
+				AE8873AE2A12073F00285682 /* AuthenticationLogIn.swift in Sources */,
+				AE8873B22A12073F00285682 /* Mobile_Number.swift in Sources */,
+				AE8873B12A12073F00285682 /* Email_Address.swift in Sources */,
+				AE8873AF2A12073F00285682 /* Utility.swift in Sources */,
+				AE8873B42A12073F00285682 /* PINView.swift in Sources */,
+				AE8873AD2A12073F00285682 /* AuthenticationConfiguration.swift in Sources */,
+				AE8873B32A12073F00285682 /* NavigationManager.swift in Sources */,
 				2ADFBE30532F97EAE1C9C4D6DC65739D /* MFAuthAccess-dummy.m in Sources */,
-				AE8931F32A04D2AF00B9CA71 /* Email_Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +519,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -833,7 +745,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

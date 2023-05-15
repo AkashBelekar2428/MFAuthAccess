@@ -14,7 +14,6 @@ public protocol EmailAddressDelegate{
 
 @available(iOS 13.0, *)
 public class Email_Address: UIView {
-    
     //MARK: Outlets
     @IBOutlet weak public var imgHeaderLogo:UIImageView!
     @IBOutlet weak public var lblHeaderLogin:UILabel!

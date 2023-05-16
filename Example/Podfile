@@ -4,6 +4,7 @@ platform :ios, '16.2'
 
 target 'MFAuthAccess_Example' do
   pod 'MFAuthAccess', :path => '../'
+  pod 'MFAuthAccess/Network', :path => '../'
 
   target 'MFAuthAccess_Tests' do
     inherit! :search_paths

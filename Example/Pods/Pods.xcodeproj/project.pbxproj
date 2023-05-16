@@ -14,6 +14,7 @@
 		6B2D81FFB10342BC8B44BD4046E9D0BB /* Pods-MFAuthAccess_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64221BB0ECBDC07BEE6E405C8A8F0103 /* Pods-MFAuthAccess_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A27A208A472D6A1E6B9A18D627E5C621 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		AC0B30BABD0BDD4533DEB074686F5ADF /* Pods-MFAuthAccess_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61143E79B90471C04C9D74E1155B2A /* Pods-MFAuthAccess_Example-dummy.m */; };
+		AE2E5E0C2A133A7C0048F3AB /* LblColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E5E0B2A133A7C0048F3AB /* LblColor.swift */; };
 		AE8873AB2A12073F00285682 /* AuthenticationLogIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8873A02A12073E00285682 /* AuthenticationLogIn.xib */; };
 		AE8873AC2A12073F00285682 /* Mobile_Number.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8873A12A12073E00285682 /* Mobile_Number.xib */; };
 		AE8873AD2A12073F00285682 /* AuthenticationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8873A22A12073E00285682 /* AuthenticationConfiguration.swift */; };
@@ -73,6 +74,7 @@
 		A20DD8DD1E0C3957F378E507336189E8 /* Pods_MFAuthAccess_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFAuthAccess_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A476212F746E53759400EBADC5C3F386 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9D07F48ACAE39A6875E66D3D7AFBC9A /* Pods-MFAuthAccess_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFAuthAccess_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AE2E5E0B2A133A7C0048F3AB /* LblColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LblColor.swift; sourceTree = "<group>"; };
 		AE8873A02A12073E00285682 /* AuthenticationLogIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationLogIn.xib; sourceTree = "<group>"; };
 		AE8873A12A12073E00285682 /* Mobile_Number.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
 		AE8873A22A12073E00285682 /* AuthenticationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationConfiguration.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		9C0A0FDBA80C2CAD45166EC43A6C9D96 /* MFAuthAccess */ = {
 			isa = PBXGroup;
 			children = (
+				AE2E5E0A2A1336160048F3AB /* Network */,
 				AE8931D62A04D16C00B9CA71 /* Resource */,
 				0482669E21437971EFD4A9FE5F911ECC /* Pod */,
 				537D16F8C61C454EE28A65F0A01DF669 /* Support Files */,
@@ -212,6 +215,14 @@
 			);
 			name = "Pods-MFAuthAccess_Tests";
 			path = "Target Support Files/Pods-MFAuthAccess_Tests";
+			sourceTree = "<group>";
+		};
+		AE2E5E0A2A1336160048F3AB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE2E5E0B2A133A7C0048F3AB /* LblColor.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		AE8931D62A04D16C00B9CA71 /* Resource */ = {
@@ -415,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8873AE2A12073F00285682 /* AuthenticationLogIn.swift in Sources */,
+				AE2E5E0C2A133A7C0048F3AB /* LblColor.swift in Sources */,
 				AE8873B22A12073F00285682 /* Mobile_Number.swift in Sources */,
 				AE8873B12A12073F00285682 /* Email_Address.swift in Sources */,
 				AE8873AF2A12073F00285682 /* Utility.swift in Sources */,

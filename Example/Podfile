@@ -4,16 +4,10 @@ platform :ios, '16.2'
 
 target 'MFAuthAccess_Example' do
   pod 'MFAuthAccess', :path => '../'
-  pod 'MFAuthAccess_Network', :path => '../'
-  
+
   target 'MFAuthAccess_Tests' do
     inherit! :search_paths
-    
-    
-  end
-  
-  target 'MFAuthAccess_Network' do
-    pod 'MFAuthAccess_Network', :path => '../'
+
     
   end
 end

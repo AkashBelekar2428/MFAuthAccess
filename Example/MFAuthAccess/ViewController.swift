@@ -8,7 +8,6 @@
 
 import UIKit
 import MFAuthAccess
-import MFAuthAccess_Network
 
 class ViewController: UIViewController {
 

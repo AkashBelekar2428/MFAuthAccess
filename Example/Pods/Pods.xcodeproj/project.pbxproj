@@ -75,8 +75,6 @@
 		A476212F746E53759400EBADC5C3F386 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9D07F48ACAE39A6875E66D3D7AFBC9A /* Pods-MFAuthAccess_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MFAuthAccess_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AE2E5E0B2A133A7C0048F3AB /* LblColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LblColor.swift; sourceTree = "<group>"; };
-		AE2E5E142A1345A40048F3AB /* MFAuthAccess_Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFAuthAccess_Network.h; sourceTree = "<group>"; };
-		AE2E5E1E2A1345A50048F3AB /* MFAuthAccess_NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAuthAccess_NetworkTests.swift; sourceTree = "<group>"; };
 		AE7719552A137A0F00FC59D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE8873A02A12073E00285682 /* AuthenticationLogIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationLogIn.xib; sourceTree = "<group>"; };
 		AE8873A12A12073E00285682 /* Mobile_Number.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mobile_Number.xib; sourceTree = "<group>"; };
@@ -228,22 +226,6 @@
 			path = NetworkLayers;
 			sourceTree = "<group>";
 		};
-		AE2E5E132A1345A40048F3AB /* MFAuthAccess_Network */ = {
-			isa = PBXGroup;
-			children = (
-				AE2E5E142A1345A40048F3AB /* MFAuthAccess_Network.h */,
-			);
-			path = MFAuthAccess_Network;
-			sourceTree = "<group>";
-		};
-		AE2E5E1D2A1345A40048F3AB /* MFAuthAccess_NetworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				AE2E5E1E2A1345A50048F3AB /* MFAuthAccess_NetworkTests.swift */,
-			);
-			path = MFAuthAccess_NetworkTests;
-			sourceTree = "<group>";
-		};
 		AE8931D62A04D16C00B9CA71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,8 +249,6 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1B3AA0AECFFC27352A248A2B33373569 /* Development Pods */,
-				AE2E5E132A1345A40048F3AB /* MFAuthAccess_Network */,
-				AE2E5E1D2A1345A40048F3AB /* MFAuthAccess_NetworkTests */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				D93CD5CF39D17AE924A4164247871D84 /* Products */,
 				5BF57D3318347DEB6D32B41065BB9A8D /* Targets Support Files */,
@@ -387,7 +367,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					90159773EF36E692D3AF65C501C2A806 = {
 						LastSwiftMigration = "";
@@ -628,6 +608,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -723,6 +704,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;

@@ -61,6 +61,17 @@
                ReferencedContainer = "container:MFAuthAccess.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE2E5E322A1347830048F3AB"
+               BuildableName = "MFAuthAccess_NetworkTests.xctest"
+               BlueprintName = "MFAuthAccess_NetworkTests"
+               ReferencedContainer = "container:MFAuthAccess.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

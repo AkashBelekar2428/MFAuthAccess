@@ -45,7 +45,7 @@ end
 
 Pod::Spec.new do |s|
   s.name             = 'MFAuthAccess_Network'
-  s.version          = '2.2.1'
+  s.version          = '2.2.2'
   s.summary          = 'simple to use.'
 
 # This description is used to generate tags and improve search results.
@@ -66,10 +66,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '16.2'
   s.swift_version = '5.0'
-  s.source_files = 'Network/**/*.swift'
+  s.source_files = 'Network/**/*'
   
   # s.resource_bundles = {
-  #   'MFAuthAccess' => ['MFAuthAccess/Assets/*.png']
+  #   'MFAuthAccess' => ['MFAuthAccess_Network/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

@@ -19,6 +19,6 @@
     "ios": "16.2"
   },
   "swift_versions": "5.0",
-  "source_files": "Resource/**/*.swift",
+  "source_files": "Network/**/*",
   "swift_version": "5.0"
 }

@@ -43,10 +43,10 @@ end
 
 
 
-Pod::Spec.new do |s|
-  s.name             = 'MFAuthAccess/Network'
-  s.version          = '1.1.0'
-  s.summary          = 'simple to use.'
+Pod::Spec.new do |sp|
+  sp.name             = 'MFAuthAccess_Network'
+  sp.version          = '1.1.1'
+  sp.summary          = 'simple to use.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -54,20 +54,20 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
+  sp.description      = <<-DESC
 'This is awesome library to use and enjoy it. change color on btn or label'
                        DESC
 
-    s.homepage         = 'https://github.com/akashbelekar2428/MFAuthAccess'
+    sp.homepage         = 'https://github.com/akashbelekar2428/MFAuthAccess'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'akashbelekar2428' => 'akashbelekar108@gmail.com' }
-  s.source           = { :git => 'https://github.com/akashbelekar2428/MFAuthAccess.git', :tag => s.version.to_s }
+  sp.license          = { :type => 'MIT', :file => 'LICENSE' }
+  sp.author           = { 'akashbelekar2428' => 'akashbelekar108@gmail.com' }
+  sp.source           = { :git => 'https://github.com/akashbelekar2428/MFAuthAccess.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '16.2'
-  s.swift_version = '5.0'
-  s.source_files = 'Resource/**/*.swift'
+  sp.ios.deployment_target = '16.2'
+  sp.swift_version = '5.0'
+  sp.source_files = 'Resource/**/*.swift'
   
   # s.resource_bundles = {
   #   'MFAuthAccess' => ['MFAuthAccess/Assets/*.png']

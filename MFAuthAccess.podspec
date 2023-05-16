@@ -45,7 +45,7 @@ end
 
 Pod::Spec.new do |s|
   s.name             = 'MFAuthAccess/Network'
-  s.version          = '1.1.5'
+  s.version          = '1.1.0'
   s.summary          = 'simple to use.'
 
 # This description is used to generate tags and improve search results.

@@ -44,8 +44,8 @@ end
 
 Pod::Spec.new do |s|
   s.name             = 'MFAuthAccess_Network'
-  s.version          = '2.2.0'
-  s.summary          = 'simple to use NetworkLayer.'
+  s.version          = '2.2.1'
+  s.summary          = 'simple to use NetworkLayer library. make easy your life '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-'This is awesome library to use and enjoy it. change color on btn or label'
+'This is awesome library to use and enjoy it. change color on btn or label, If you want to make your project esier or easy way to bind then use this lib'
                        DESC
 
     s.homepage         = 'https://github.com/akashbelekar2428/MFAuthAccess'
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '16.2'
   s.swift_version = '5.0'
-  s.source_files = 'Network/**/*'
+  s.source_files = 'NetworkLayers/**/*'
   
   # s.resource_bundles = {
   #   'MFAuthAccess' => ['MFAuthAccess_Network/Assets/*.png']

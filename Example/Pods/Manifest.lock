@@ -1,16 +1,24 @@
 PODS:
-  - MFAuthAccess (0.1.0)
+  - Alamofire (5.7.1)
+  - MFAuthAccess (1.2.1):
+    - Alamofire
 
 DEPENDENCIES:
+  - Alamofire
   - MFAuthAccess (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
 
 EXTERNAL SOURCES:
   MFAuthAccess:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MFAuthAccess: 48ab8f0a0063fad93958db91831ae285f85f6d31
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  MFAuthAccess: 93a319dff771e955a48e9742bea4c7e55237342b
 
-PODFILE CHECKSUM: 8538f189f0b900edd7ee8d010c5ef8de6ed90ffe
+PODFILE CHECKSUM: ba7a714c0ff3fc8ad8913340b0865afac635ca8e
 
 COCOAPODS: 1.12.1

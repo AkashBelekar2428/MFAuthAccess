@@ -1,4 +1,3 @@
-
 //
 //  Utility.swift
 //  Authentications
@@ -8,7 +7,7 @@
 import Foundation
 import UIKit
 
-public class Utility {
+public class Utility:UIViewController {
     
     //MARK: Singletone
     static let shared = Utility()
@@ -22,7 +21,7 @@ public class Utility {
         viewController.present(alert, animated: true)
     }
     
-    public func showAltersBtn(title:String, msg:String, firstAction:String, secondAction:String, firstComplition:@escaping () -> Void,secondComplition:@escaping () -> Void, viewController: UIViewController){
+    public func showAltersActions(title:String, msg:String, firstAction:String, secondAction:String, firstComplition:@escaping () -> Void,secondComplition:@escaping () -> Void, viewController: UIViewController){
         
         let alter = UIAlertController(title: title, message: msg, preferredStyle: .alert)
        
@@ -44,7 +43,6 @@ public class Utility {
             viewController.present(alter, animated: true)
         })
     }
-    
     
     //MARK: EmailValidations
     public func isValideEmail(email EnterEmail:String) -> Bool{
@@ -73,7 +71,6 @@ public class Utility {
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneNumber)
         return phoneTest.evaluate(with: EnterPhone)
     }
-
 }
 
 

@@ -11,8 +11,6 @@ import UIKit
 public protocol AuthenticationLogInDelegate{
     func sendPinBtnAction(email: String, password: String)
 }
-
-@available(iOS 13.0, *)
 public class AuthenticationLogIn: UIView {
     
     //MARK: IBOutlets
@@ -34,7 +32,6 @@ public class AuthenticationLogIn: UIView {
     var myUtility = Utility()
     public weak var authController: UIViewController?
     
-    
     //MARK: System methods
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -45,7 +42,6 @@ public class AuthenticationLogIn: UIView {
         super.init(frame: frame)
         commonInit()
     }
-    
     
     //MARK: Custom methods
     func commonInit() {
@@ -62,8 +58,27 @@ public class AuthenticationLogIn: UIView {
         return nib
     }
     
-    @available(iOS 13.0, *)
-    //MARK: Configurations
+    public func setAuthDefaultThemes(){
+        let authConfiguration = AuthenticationConfiguration()
+        authConfiguration.authType = "EmailAddress"
+        authConfiguration.text = "LogIn"
+        authConfiguration.backgroundColor = .gray
+        authConfiguration.font = .boldSystemFont(ofSize: 24)
+        authConfiguration.lblFirstFiledFont = .boldSystemFont(ofSize: 14)
+        authConfiguration.lblSecondFiledFont = .boldSystemFont(ofSize: 14)
+        authConfiguration.textColor = .black
+        authConfiguration.logo = UIImage(named: "twitter")!
+        authConfiguration.placeHolderTextColor = .gray
+        authConfiguration.placeHolderText = "Enter Your Email"
+        authConfiguration.placeHolderPasswordText = "Enter Your Password"
+        authConfiguration.placeHolderFont = .systemFont(ofSize: 14)
+        authConfiguration.imgIconColor = .gray
+        authConfiguration.btnBackgroundColor = .green
+        authConfiguration.viewType = .authLog
+        
+        self.setThemWithAuthConfiguration(config: authConfiguration)
+    }
+    
     public func setThemWithAuthConfiguration(config:AuthenticationConfiguration)
     {
         self.imgHeaderLogo.image = config.logo
@@ -73,7 +88,7 @@ public class AuthenticationLogIn: UIView {
         self.lblHeaderLogin.font = config.font
         self.lblAuthType.font = config.lblFirstFiledFont
         self.viewHeader.backgroundColor = config.backgroundColor
-        self.btnValidate.backgroundColor = config.backgroundColor
+        self.btnValidate.backgroundColor = config.btnBackgroundColor
         self.lblAuthType.text = config.authType
         self.lblPassword.font = config.lblSecondFiledFont
         self.tfEmail.placeholder = config.placeHolderText
@@ -87,7 +102,7 @@ public class AuthenticationLogIn: UIView {
     }
     
     //MARK: IBAction
-    @IBAction func pinSendBtnAction(_ sender:UIButton){
+    @IBAction func validateBtnAction(_ sender:UIButton){
         if myUtility.isValideEmail(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
         {
             if myUtility.isPasswordValide(password: (tfPassword.text?.trimmingCharacters(in: .whitespaces))!)
@@ -106,8 +121,6 @@ public class AuthenticationLogIn: UIView {
     }
 }
 
-//MARK: UITextFieldDelegate
-@available(iOS 13.0, *)
 extension AuthenticationLogIn:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

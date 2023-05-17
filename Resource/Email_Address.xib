@@ -59,14 +59,14 @@
                         <constraint firstAttribute="height" constant="2" id="6In-kO-THl"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pr-te-aN6">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pr-te-aN6">
                     <rect key="frame" x="170" y="216.33333333333334" width="146.33333333333337" height="35.666666666666657"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5td-Bv-wKn"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Send PIN      -&gt;">
+                    <buttonConfiguration key="configuration" style="filled" title="Send PIN     -&gt; ">
                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="baseBackgroundColor" systemColor="systemGreenColor"/>

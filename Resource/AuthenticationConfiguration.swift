@@ -15,12 +15,12 @@ public class AuthenticationConfiguration{
     public var font: UIFont = UIFont.systemFont(ofSize: 16)
     public var lblFirstFiledFont: UIFont =  UIFont.systemFont(ofSize: 18)
     public var lblSecondFiledFont: UIFont = UIFont.systemFont(ofSize: 18)
-    public var textColor : UIColor = UIColor.brown
+    public var textColor: UIColor = UIColor.brown
     public var numberOfLines: Int = 0
-    public var text:String = "Login"
-    public var logo:UIImage = UIImage(systemName: "homekit")!
-    public var btnFont:UIFont = UIFont.systemFont(ofSize: 18)
-    public var backgroundColor:UIColor = UIColor.yellow
+    public var text: String = "Login"
+    public var logo: UIImage = UIImage(systemName: "homekit")!
+    public var btnFont: UIFont = UIFont.systemFont(ofSize: 18)
+    public var backgroundColor: UIColor = UIColor.yellow
     public var btnBackgroundColor: UIColor = UIColor.brown
     public var authType: String = "User"
     public var placeHolderText: String = "Enter Email"
@@ -29,6 +29,7 @@ public class AuthenticationConfiguration{
     public var imgIconColor: UIColor =  UIColor.brown
     public var placeHolderFont: UIFont =  UIFont.systemFont(ofSize: 18)
     public var pinText: String = "Please Enter Numbers"
+    public var btnTitle: String = "DONE"
     public var viewType: AuthType = .none
     
     public init() {}

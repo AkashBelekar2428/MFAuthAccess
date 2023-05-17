@@ -11,9 +11,12 @@ import UIKit
 public protocol EmailAddressDelegate{
     func sendPINBtnAction(email:String)
 }
+//public protocol navigateEmailViewDelegate{
+//    func navEmail()
+//}
 
-@available(iOS 13.0, *)
-public class Email_Address: UIView {
+public class Email_Address: UIView{
+    
     //MARK: Outlets
     @IBOutlet weak public var imgHeaderLogo:UIImageView!
     @IBOutlet weak public var lblHeaderLogin:UILabel!
@@ -29,10 +32,12 @@ public class Email_Address: UIView {
     let nibName = "Email_Address"
     public var pinViewIns = PINView()
     public var delegate:EmailAddressDelegate?
+    // public var emailNavDelegate:navigateEmailViewDelegate?
     public var emailConfig = AuthenticationConfiguration()
     lazy var  myUtility = Utility()
     public weak var emailController: UIViewController?
-
+    
+    public var emailNav = ComponentManager()
     
     //MARK: System methods
     required init?(coder aDecoder: NSCoder) {
@@ -53,14 +58,33 @@ public class Email_Address: UIView {
         tfEmail.delegate = self
         self.addSubview(view)
     }
- 
+    
     func loadViewFromNib() -> UIView? {
         let bundel = Bundle(for: Email_Address.self)
         let nib = bundel.loadNibNamed(nibName, owner: self)?.first as? UIView
         return nib
     }
     
-    //MARK: Configurations
+    public func setEmailDefaultThemes(){
+        let configObj = AuthenticationConfiguration()
+        configObj.textAlignment = .left
+        configObj.text = "LogIn"
+        configObj.numberOfLines = 2
+        configObj.font = .systemFont(ofSize: 18)
+        configObj.textColor = .darkGray
+        configObj.logo = UIImage(named: "twitter")!
+        configObj.backgroundColor = UIColor.lightGray
+        configObj.btnBackgroundColor = UIColor.green
+        configObj.imgIconColor = .gray
+        configObj.placeHolderFont = .systemFont(ofSize: 14)
+        configObj.placeHolderText = "Enter Your Email"
+        configObj.btnTitle = "Validations"
+        configObj.viewType = .email
+        
+        self.setThemeWithEmailConfiguration(config: configObj)
+    }
+    
+    
     public func setThemeWithEmailConfiguration(config:AuthenticationConfiguration){
         self.imgHeaderLogo.image = config.logo
         self.lblHeaderLogin.textColor = config.textColor
@@ -73,11 +97,12 @@ public class Email_Address: UIView {
         self.tfEmail.font = config.placeHolderFont
         self.imgReminder.tintColor = config.imgIconColor
         self.lblEmailAddress.textColor = config.textColor
+        self.btnSendPIN.titleLabel?.text = config.btnTitle
     }
     
     //MARK: IBAction
     @IBAction func sendPINClicked(_ sender:UIButton){
-        
+        //     emailNavDelegate?.navEmail()
         if myUtility.isValideEmail(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
         {
             delegate?.sendPINBtnAction(email: (tfEmail.text?.trimmingCharacters(in: .whitespaces))!)
@@ -89,8 +114,6 @@ public class Email_Address: UIView {
     }
 }
 
-   //MARK: UITextFieldDelegate
-@available(iOS 13.0, *)
 extension Email_Address:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

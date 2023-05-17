@@ -12,8 +12,6 @@ import Foundation
 public protocol MobileNumberDelegate{
     func sendPINAction(mobileNumber:String)
 }
-
-@available(iOS 13.0, *)
 public class Mobile_Number:UIView {
     
     //MARK: IBOutlets
@@ -26,7 +24,7 @@ public class Mobile_Number:UIView {
     @IBOutlet weak public var lblCountryCode:UILabel!
     @IBOutlet weak public var lblMobile:UILabel!
     @IBOutlet weak public var imgReminder:UIImageView!
-
+    
     
     //MARK: Variables
     let nibName = "Mobile_Number"
@@ -34,6 +32,7 @@ public class Mobile_Number:UIView {
     public var mobileConfig = AuthenticationConfiguration()
     var myUtility = Utility()
     public weak var mobileController: UIViewController?
+    
     
     
     //MARK: System methods
@@ -46,8 +45,37 @@ public class Mobile_Number:UIView {
         super.init(frame: frame)
         commonInit()
     }
+    public func setMobileDefaultThemes(){
+        let mobileConfig = AuthenticationConfiguration()
+        mobileConfig.backgroundColor = UIColor.lightGray
+        mobileConfig.textColor = .darkGray
+        mobileConfig.font = .systemFont(ofSize: 18)
+        mobileConfig.text = "LogInn"
+        mobileConfig.logo = UIImage(named: "fb")!
+        mobileConfig.btnFont = .boldSystemFont(ofSize: 18)
+        mobileConfig.placeHolderText = "Enter Your MobileNumber"
+        mobileConfig.placeHolderFont = .systemFont(ofSize: 14)
+        mobileConfig.imgIconColor = .gray
+        mobileConfig.viewType = .mobile
+        
+        self.setThemeWithMobileConfiguration(config: mobileConfig)
+    }
     
-
+    public func setThemeWithMobileConfiguration(config:AuthenticationConfiguration)
+    {
+        self.imgHeaderLogo.image = config.logo
+        self.lblHeaderLogin.text = config.text
+        self.lblHeaderLogin.font = config.font
+        self.lblHeaderLogin.textColor = config.textColor
+        self.lblCountryCode.textColor = config.textColor
+        self.viewHeader.backgroundColor = config.backgroundColor
+        self.lblMobile.textColor = config.textColor
+        self.tfMobileNum.placeholder = config.placeHolderText
+        self.tfMobileNum.font = config.placeHolderFont
+        self.tfMobileNum.textColor = config.placeHolderTextColor
+        self.imgReminder.tintColor = config.imgIconColor
+    }
+    
     //MARK: Custom methods
     func commonInit() {
         guard let view = loadViewFromNib() else { return }
@@ -63,24 +91,6 @@ public class Mobile_Number:UIView {
         return nib
     }
     
-    @available(iOS 13.0, *)
-    //MARK: Configurations
-  public func setThemeWithMobileConfiguration(config:AuthenticationConfiguration)
-    {
-        self.imgHeaderLogo.image = config.logo
-        self.lblHeaderLogin.text = config.text
-        self.lblHeaderLogin.font = config.font
-        self.lblHeaderLogin.textColor = config.textColor
-        self.lblCountryCode.textColor = config.textColor
-        self.viewHeader.backgroundColor = config.backgroundColor
-        self.lblMobile.textColor = config.textColor
-        self.tfMobileNum.placeholder = config.placeHolderText
-        self.tfMobileNum.font = config.placeHolderFont
-        self.tfMobileNum.textColor = config.placeHolderTextColor
-        self.imgReminder.tintColor = config.imgIconColor
-    }
-    
-    //MARK: Keyboard Done Button
     func setupToolBar(){
         let barBtn = UIToolbar()
         let doneBtn = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneBtnTapped(_ :)))
@@ -100,17 +110,19 @@ public class Mobile_Number:UIView {
         if myUtility.isPhoneValide(phone: (tfMobileNum.text?.trimmingCharacters(in: .whitespaces))!){
             delegate?.sendPINAction(mobileNumber: (tfMobileNum.text?.trimmingCharacters(in: .whitespaces))!)
         }
-       else
+        else
         {
-           myUtility.showAlter(title: "MOBILE NUMBER", msg: "Invalide Mobile Number", action: "OK", viewController: self.mobileController!)
-       }
+            myUtility.showAlter(title: "MOBILE NUMBER", msg: "Invalide Mobile Number", action: "OK", viewController: self.mobileController!)
+        }
     }
 }
 
-    //MARK: UITextFieldDelegate
-@available(iOS 13.0, *)
 extension Mobile_Number:UITextFieldDelegate{
     
+    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == tfMobileNum{
             
@@ -124,7 +136,6 @@ extension Mobile_Number:UITextFieldDelegate{
             return true
         }
     }
-    
     public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

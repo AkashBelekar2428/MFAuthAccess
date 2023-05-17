@@ -121,8 +121,8 @@ public class Mobile_Number:UIView {
 }
 
 @available(iOS 13.0, *)
-extension Mobile_Number:UITextFieldDelegate
-{
+extension Mobile_Number:UITextFieldDelegate{
+    
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

@@ -26,6 +26,7 @@
 		AEB66D812A149693008BC4D9 /* PINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB66D762A149693008BC4D9 /* PINView.swift */; };
 		AEB66D822A149693008BC4D9 /* PINView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB66D772A149693008BC4D9 /* PINView.xib */; };
 		AEB66D832A149693008BC4D9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB66D782A149693008BC4D9 /* Utility.swift */; };
+		AEC5564F2A14B30C00757720 /* RemoteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5564E2A14B30C00757720 /* RemoteLayer.swift */; };
 		E942C51AB9A993A9CD02CC5892DFA8E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F09FA9BC31EAD905BC2819220B041AB0 /* Pods-MFAuthAccess_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5242A092E0B690F7A59D3EF34A91D9D1 /* Pods-MFAuthAccess_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		AEB66D762A149693008BC4D9 /* PINView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINView.swift; sourceTree = "<group>"; };
 		AEB66D772A149693008BC4D9 /* PINView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PINView.xib; sourceTree = "<group>"; };
 		AEB66D782A149693008BC4D9 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		AEC5564E2A14B30C00757720 /* RemoteLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLayer.swift; sourceTree = "<group>"; };
 		BB6D1FF1FDCAFDDA91E4E3E32402A434 /* MFAuthAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MFAuthAccess-umbrella.h"; sourceTree = "<group>"; };
 		C5D4F5B998CC08E743009CD191ABA951 /* Pods-MFAuthAccess_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MFAuthAccess_Example.modulemap"; sourceTree = "<group>"; };
 		CAF7E951D46E9D662B5DF47B16836CD0 /* MFAuthAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MFAuthAccess.modulemap; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				AEB66D782A149693008BC4D9 /* Utility.swift */,
 				AEB66D712A149693008BC4D9 /* AuthenticationConfiguration.swift */,
 				AEB66D752A149693008BC4D9 /* ComponentManager.swift */,
+				AEC5564E2A14B30C00757720 /* RemoteLayer.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2E5E0C2A133A7C0048F3AB /* LblColor.swift in Sources */,
+				AEC5564F2A14B30C00757720 /* RemoteLayer.swift in Sources */,
 				AEB66D7B2A149693008BC4D9 /* AuthenticationLogIn.swift in Sources */,
 				AEB66D832A149693008BC4D9 /* Utility.swift in Sources */,
 				AEB66D812A149693008BC4D9 /* PINView.swift in Sources */,

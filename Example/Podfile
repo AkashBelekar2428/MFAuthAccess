@@ -3,8 +3,8 @@ use_frameworks!
 #platform :ios, '16.2'
 
 target 'MFAuthAccess_Example' do
-  pod 'Alamofire'
   pod 'MFAuthAccess', :path => '../'
+  
   
   target 'MFAuthAccess_Tests' do
     inherit! :search_paths

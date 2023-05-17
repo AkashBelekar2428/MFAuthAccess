@@ -29,10 +29,10 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '16.2'
-  s.platform     = :ios, '12.0'
   s.swift_version = '5.0'
   s.source_files = 'Resource/**/*'
-  s.dependency 'Alamofire'
+  # s.dependency 'Alamofire'
+  s.dependency 'Alamofire', '~> 5.0.0-rc.3'
   
   # s.resource_bundles = {
   #   'MFAuthAccess' => ['MFAuthAccess/Assets/*.png']

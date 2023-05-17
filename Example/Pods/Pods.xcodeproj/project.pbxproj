@@ -20,11 +20,9 @@
 		77FCC1662227AB370A5013283618F46C /* AuthenticationLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610FE8846F5D65A86E3C6AF2DAD34040 /* AuthenticationLogIn.swift */; };
 		7B54A9BBBF9EA596292ECE4D441362FA /* MFAuthAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8343877FC28EA8A480A5FB91D3781733 /* MFAuthAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D1F963BE1148CCBC30856636485BE6E /* Mobile_Number.xib in Sources */ = {isa = PBXBuildFile; fileRef = 291891ED58603E7C6A619A4864E921F2 /* Mobile_Number.xib */; };
-		8E85763AE29BEF0A46EE875B8F069E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		A35C6D20D16550482F76CCB587A9FE4B /* AuthenticationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F79A88AF42C9C572C5A89110E912C6 /* AuthenticationConfiguration.swift */; };
 		CC478B0F2905F9C8BDAB83F32CA19272 /* AuthenticationLogIn.xib in Sources */ = {isa = PBXBuildFile; fileRef = B026DA0CA4016333A8D425C010217421 /* AuthenticationLogIn.xib */; };
 		CCD8529545F6C6B0DC9FEB71AAB58A9D /* Pods-MFAuthAccess_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5242A092E0B690F7A59D3EF34A91D9D1 /* Pods-MFAuthAccess_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7BCBE1EB4A638403C265CE2199EFF1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
 		E2CF34C9A76FF5F449EB71E74482FA9C /* PINView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B7314C153E1FD4F78B3E8ED9CB5EFBD1 /* PINView.xib */; };
 		E942C51AB9A993A9CD02CC5892DFA8E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		F139307F1A78ED57A56E3298D720035F /* Email_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9861C4BA2A5B02792ECF21910A9C5C /* Email_Address.swift */; };
@@ -39,20 +37,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 90159773EF36E692D3AF65C501C2A806;
 			remoteInfo = MFAuthAccess;
-		};
-		211C3FEA85C392021CF061560F95A37E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
-		575C3285F4D2825DA4EB0FEF1993E118 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
 		};
 		5CA83C6F834A974900E8E805DEAE4923 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -82,7 +66,6 @@
 		4FE482753BAADE5B3EB7CD455C44F225 /* Pods-MFAuthAccess_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MFAuthAccess_Example-frameworks.sh"; sourceTree = "<group>"; };
 		50DDC82C55BFC043D0BAFE9037F2247E /* Pods-MFAuthAccess_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MFAuthAccess_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5242A092E0B690F7A59D3EF34A91D9D1 /* Pods-MFAuthAccess_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MFAuthAccess_Example-umbrella.h"; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		610FE8846F5D65A86E3C6AF2DAD34040 /* AuthenticationLogIn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationLogIn.swift; path = Resource/AuthenticationLogIn.swift; sourceTree = "<group>"; };
 		619149B0C8A35479CD218847F9767D21 /* Pods-MFAuthAccess_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MFAuthAccess_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		64221BB0ECBDC07BEE6E405C8A8F0103 /* Pods-MFAuthAccess_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MFAuthAccess_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -134,15 +117,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E942C51AB9A993A9CD02CC5892DFA8E1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BF6E64D3157435E5797A5278584A4DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7BCBE1EB4A638403C265CE2199EFF1B /* CFNetwork.framework in Frameworks */,
-				8E85763AE29BEF0A46EE875B8F069E8E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +186,6 @@
 		73E25906ACEE5B62D3E4C06B28CB3D99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
 				6840E5D65041D2F5EFF9D7F5956E1905 /* MFAuthAccess.framework */,
 				79E66F42CAA2557C78B6B23D601BFB21 /* Pods_MFAuthAccess_Example.framework */,
 				A20DD8DD1E0C3957F378E507336189E8 /* Pods_MFAuthAccess_Tests.framework */,
@@ -320,13 +293,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED12AA7015568FEE3FAA009FC97DAAD5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -342,7 +308,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9616240CD45EE4BC329E3119DB997D2E /* PBXTargetDependency */,
 				F3F1270411709F7A6DB7E3B9552DA1E2 /* PBXTargetDependency */,
 			);
 			name = "Pods-MFAuthAccess_Example";
@@ -381,29 +346,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				61B63E3DE98EE6B0D76E6EBF9865C662 /* PBXTargetDependency */,
 			);
 			name = MFAuthAccess;
 			productName = MFAuthAccess;
 			productReference = 6840E5D65041D2F5EFF9D7F5956E1905 /* MFAuthAccess.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7761A54AFA2998F27E0BC2FACC2EB53 /* Build configuration list for PBXNativeTarget "Alamofire" */;
-			buildPhases = (
-				ED12AA7015568FEE3FAA009FC97DAAD5 /* Headers */,
-				277C3B3F937C6D40D2B777A164FAB89D /* Sources */,
-				5BF6E64D3157435E5797A5278584A4DC /* Frameworks */,
-				565FD2058706F22D2347B30C65280F30 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -428,7 +374,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				90159773EF36E692D3AF65C501C2A806 /* MFAuthAccess */,
 				2DEA5EA0DF2F87FA5F8F72EA93D072EF /* Pods-MFAuthAccess_Example */,
 				6AD90E7C53CEA138FB4F61018CD912C9 /* Pods-MFAuthAccess_Tests */,
@@ -438,13 +383,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		002A47C300C630B4921ED9378754BEAF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		565FD2058706F22D2347B30C65280F30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -468,13 +406,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		277C3B3F937C6D40D2B777A164FAB89D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85D4FC7C82320A8F655741392A0B5984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,18 +445,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		61B63E3DE98EE6B0D76E6EBF9865C662 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 211C3FEA85C392021CF061560F95A37E /* PBXContainerItemProxy */;
-		};
-		9616240CD45EE4BC329E3119DB997D2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 575C3285F4D2825DA4EB0FEF1993E118 /* PBXContainerItemProxy */;
-		};
 		D8B7F233401116C71F9F61D5D68C68F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MFAuthAccess_Example";
@@ -541,38 +460,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05D56FF2D1BF9BBD748081079C43C825 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		43376422766CA9E445E6D0F77CE93AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 276D0B3AE5F1D9C021F527E50D78E55B /* Pods-MFAuthAccess_Example.debug.xcconfig */;
@@ -590,7 +477,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFAuthAccess_Example/Pods-MFAuthAccess_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFAuthAccess_Example/Pods-MFAuthAccess_Example.modulemap";
@@ -751,7 +638,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFAuthAccess_Tests/Pods-MFAuthAccess_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFAuthAccess_Tests/Pods-MFAuthAccess_Tests.modulemap";
@@ -768,37 +655,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		7F53DF231BC8C5288E82C5ECAF7AFB58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		A3AC8F567D1E0DE1DE9F9E559507DA40 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -817,7 +673,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MFAuthAccess/MFAuthAccess-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MFAuthAccess/MFAuthAccess-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MFAuthAccess/MFAuthAccess.modulemap";
 				PRODUCT_MODULE_NAME = MFAuthAccess;
@@ -850,7 +706,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFAuthAccess_Example/Pods-MFAuthAccess_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFAuthAccess_Example/Pods-MFAuthAccess_Example.modulemap";
@@ -885,7 +741,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MFAuthAccess/MFAuthAccess-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MFAuthAccess/MFAuthAccess-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MFAuthAccess/MFAuthAccess.modulemap";
 				PRODUCT_MODULE_NAME = MFAuthAccess;
@@ -917,7 +773,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MFAuthAccess_Tests/Pods-MFAuthAccess_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MFAuthAccess_Tests/Pods-MFAuthAccess_Tests.modulemap";
@@ -951,15 +807,6 @@
 			buildConfigurations = (
 				446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */,
 				5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D7761A54AFA2998F27E0BC2FACC2EB53 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F53DF231BC8C5288E82C5ECAF7AFB58 /* Debug */,
-				05D56FF2D1BF9BBD748081079C43C825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,4 +1,4 @@
-platform :ios, '16.2'
+#platform :ios, '14.0'
 use_frameworks!
 
 

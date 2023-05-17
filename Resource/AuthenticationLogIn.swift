@@ -11,6 +11,7 @@ import UIKit
 public protocol AuthenticationLogInDelegate{
     func sendPinBtnAction(email: String, password: String)
 }
+@available(iOS 13.0, *)
 public class AuthenticationLogIn: UIView {
     
     //MARK: IBOutlets
@@ -121,6 +122,7 @@ public class AuthenticationLogIn: UIView {
     }
 }
 
+@available(iOS 13.0, *)
 extension AuthenticationLogIn:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

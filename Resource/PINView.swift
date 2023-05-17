@@ -15,6 +15,7 @@ protocol GenericPINViewDelegate : AnyObject {
     func pinViewDelegate(pinValue: String)
 }
 
+@available(iOS 13.0, *)
 public class PINView: UIView{
     
     @IBOutlet weak public var imgHeaderLogo:UIImageView!
@@ -307,6 +308,7 @@ public class PINView: UIView{
     }
 }
 
+@available(iOS 13.0, *)
 extension PINView: UITextViewDelegate, UITextFieldDelegate{
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == pinVarTf

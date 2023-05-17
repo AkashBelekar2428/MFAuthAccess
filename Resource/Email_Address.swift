@@ -15,6 +15,8 @@ public protocol EmailAddressDelegate{
 //    func navEmail()
 //}
 
+@available(iOS 13.0, *)
+@available(iOS 13.0, *)
 public class Email_Address: UIView{
     
     //MARK: Outlets
@@ -65,6 +67,7 @@ public class Email_Address: UIView{
         return nib
     }
     
+    @available(iOS 13.0, *)
     public func setEmailDefaultThemes(){
         let configObj = AuthenticationConfiguration()
         configObj.textAlignment = .left
@@ -85,6 +88,7 @@ public class Email_Address: UIView{
     }
     
     
+    @available(iOS 13.0, *)
     public func setThemeWithEmailConfiguration(config:AuthenticationConfiguration){
         self.imgHeaderLogo.image = config.logo
         self.lblHeaderLogin.textColor = config.textColor
@@ -114,6 +118,7 @@ public class Email_Address: UIView{
     }
 }
 
+@available(iOS 13.0, *)
 extension Email_Address:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

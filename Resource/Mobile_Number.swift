@@ -12,6 +12,7 @@ import Foundation
 public protocol MobileNumberDelegate{
     func sendPINAction(mobileNumber:String)
 }
+@available(iOS 13.0, *)
 public class Mobile_Number:UIView {
     
     //MARK: IBOutlets
@@ -45,6 +46,7 @@ public class Mobile_Number:UIView {
         super.init(frame: frame)
         commonInit()
     }
+    @available(iOS 13.0, *)
     public func setMobileDefaultThemes(){
         let mobileConfig = AuthenticationConfiguration()
         mobileConfig.backgroundColor = UIColor.lightGray
@@ -61,6 +63,7 @@ public class Mobile_Number:UIView {
         self.setThemeWithMobileConfiguration(config: mobileConfig)
     }
     
+    @available(iOS 13.0, *)
     public func setThemeWithMobileConfiguration(config:AuthenticationConfiguration)
     {
         self.imgHeaderLogo.image = config.logo
@@ -117,6 +120,7 @@ public class Mobile_Number:UIView {
     }
 }
 
+@available(iOS 13.0, *)
 extension Mobile_Number:UITextFieldDelegate{
     
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {

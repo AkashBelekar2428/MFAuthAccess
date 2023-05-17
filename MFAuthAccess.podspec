@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MFAuthAccess'
-  s.version          = '1.2.2'
+  s.version          = '1.2.3'
   s.summary          = 'simple to use.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '16.2'
   s.swift_version = '5.0'
   s.source_files = 'Resource/**/*'
-  # s.dependency 'Alamofire'
   
   # s.resource_bundles = {
   #   'MFAuthAccess' => ['MFAuthAccess/Assets/*.png']

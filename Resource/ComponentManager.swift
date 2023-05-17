@@ -19,7 +19,6 @@ public class ComponentManager{
 //    public var pinNav = PINView.init()
 //    public var authNav = AuthenticationConfiguration.init()
     
-    
     func navView(view:ComponentManager){
         navDelegate?.navigationComponet()
     }

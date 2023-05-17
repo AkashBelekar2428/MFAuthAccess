@@ -296,7 +296,6 @@ public class PINView: UIView{
         else {
             myUtility.showAlter(title: "PIN", msg: "Invalide Pin", action: "OK", viewController: self.pinController!)
         }
-        
     }
     
     @IBAction func actionTapToEnterPin()
@@ -416,10 +415,8 @@ extension PINView: UITextViewDelegate, UITextFieldDelegate{
                 if pinVarTf.text != "" {
                     self.delegatePinView?.pinViewDelegate(pinValue: pinVarTf.fullTextWith(range: range, replacementString: string)!)
                 }
-                
                 return true
             }
-            
         }
         else{
             return true

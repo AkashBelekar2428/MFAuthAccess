@@ -9,6 +9,7 @@ import Foundation
 
 //MARK: AuthenticationConfiguration
 @available(iOS 13.0, *)
+
 public class AuthenticationConfiguration{
     
     public var textAlignment : NSTextAlignment = .left

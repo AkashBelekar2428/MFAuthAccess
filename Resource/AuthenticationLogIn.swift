@@ -11,6 +11,7 @@ import UIKit
 public protocol AuthenticationLogInDelegate{
     func sendPinBtnAction(email: String, password: String)
 }
+
 @available(iOS 13.0, *)
 public class AuthenticationLogIn: UIView {
     

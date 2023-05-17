@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '16.2'
+platform :ios, '12.0'
 
 target 'MFAuthAccess_Example' do
   pod 'Alamofire'

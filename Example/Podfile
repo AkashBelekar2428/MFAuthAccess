@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'MFAuthAccess_Example' do
   pod 'MFAuthAccess', :path => '../'
+  pod 'Alamofire', '~> 5.4'
   
   target 'MFAuthAccess_Tests' do
     inherit! :search_paths

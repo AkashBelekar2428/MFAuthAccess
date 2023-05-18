@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		079E35996E0E79CF7310AD24 /* Pods-MFAuthAccess_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFAuthAccess_Example.release.xcconfig"; path = "Target Support Files/Pods-MFAuthAccess_Example/Pods-MFAuthAccess_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1967D03BACC8E0C150623B30 /* MFAuthAccess.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MFAuthAccess.podspec; path = ../MFAuthAccess.podspec; sourceTree = "<group>"; };
+		1967D03BACC8E0C150623B30 /* MFAuthAccess.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MFAuthAccess.podspec; path = ../MFAuthAccess.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4587297EB0AB779F5F1DFDCD /* Pods_MFAuthAccess_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFAuthAccess_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* MFAuthAccess_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFAuthAccess_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };

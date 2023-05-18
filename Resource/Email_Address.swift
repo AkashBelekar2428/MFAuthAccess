@@ -23,11 +23,11 @@ public class Email_Address: UIView{
     @IBOutlet weak public var imgHeaderLogo:UIImageView!
     @IBOutlet weak public var lblHeaderLogin:UILabel!
     @IBOutlet weak public var viewHeader:UIView!
-    @IBOutlet weak public var viewEmailAddress:UIView!
     @IBOutlet weak public var tfEmail:UITextField!
     @IBOutlet weak public var btnSendPIN:UIButton!
-    @IBOutlet weak public var imgReminder:UIImageView!
+    @IBOutlet weak public var btnReminder:UIButton!
     @IBOutlet weak public var lblEmailAddress:UILabel!
+    @IBOutlet weak public var viewContainerEmail:UIView!
     
     
     //MARK: Variables
@@ -99,7 +99,7 @@ public class Email_Address: UIView{
         self.tfEmail.placeholder = config.placeHolderText
         self.tfEmail.textColor = config.textColor
         self.tfEmail.font = config.placeHolderFont
-        self.imgReminder.tintColor = config.imgIconColor
+        self.btnReminder.tintColor = config.imgIconColor
         self.lblEmailAddress.textColor = config.textColor
         self.btnSendPIN.titleLabel?.text = config.btnTitle
     }
@@ -115,6 +115,10 @@ public class Email_Address: UIView{
         {
             myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self.emailController!)
         }
+    }
+    @IBAction func reminerBtnAction(_ sender:UIButton)
+    {
+        
     }
 }
 

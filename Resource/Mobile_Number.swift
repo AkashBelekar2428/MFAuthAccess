@@ -20,11 +20,11 @@ public class Mobile_Number:UIView {
     @IBOutlet weak public var lblHeaderLogin:UILabel!
     @IBOutlet weak public var viewHeader:UIView!
     @IBOutlet weak public var btnSendPin:UIButton!
-    @IBOutlet weak public var viewMobile:UIView!
+    @IBOutlet weak public var viewContainerMobile:UIView!
     @IBOutlet weak public var tfMobileNum:UITextField!
     @IBOutlet weak public var lblCountryCode:UILabel!
     @IBOutlet weak public var lblMobile:UILabel!
-    @IBOutlet weak public var imgReminder:UIImageView!
+    @IBOutlet weak public var btnEye:UIButton!
     
     
     //MARK: Variables
@@ -76,7 +76,7 @@ public class Mobile_Number:UIView {
         self.tfMobileNum.placeholder = config.placeHolderText
         self.tfMobileNum.font = config.placeHolderFont
         self.tfMobileNum.textColor = config.placeHolderTextColor
-        self.imgReminder.tintColor = config.imgIconColor
+        self.btnEye.tintColor = config.imgIconColor
     }
     
     //MARK: Custom methods
@@ -104,7 +104,7 @@ public class Mobile_Number:UIView {
     }
     
     @objc func doneBtnTapped(_ tap:UITapGestureRecognizer){
-        viewMobile.endEditing(true)
+        viewContainerMobile.endEditing(true)
     }
     
     //MARK: IBAction
@@ -117,6 +117,11 @@ public class Mobile_Number:UIView {
         {
             myUtility.showAlter(title: "MOBILE NUMBER", msg: "Invalide Mobile Number", action: "OK", viewController: self.mobileController!)
         }
+    }
+    
+    @IBAction func eyeBtnAction(_ sender:UIButton)
+    {
+        
     }
 }
 

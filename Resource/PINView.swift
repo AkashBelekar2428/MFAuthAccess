@@ -24,6 +24,8 @@ public class PINView: UIView{
     @IBOutlet weak public var lblPinDescription:UILabel!
     @IBOutlet weak public var btnValidate:UIButton!
     @IBOutlet weak public var lblPin:UILabel!
+    @IBOutlet weak public var viewContainerPIN:UIView!
+    @IBOutlet weak public var btnResentPIN:UIButton!
     
     @IBOutlet weak public var bgViewVerifyPin: UIView!
     @IBOutlet weak public var pinVarTf: UITextField!

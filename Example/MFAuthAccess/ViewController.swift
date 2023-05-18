@@ -8,6 +8,7 @@
 
 import UIKit
 import MFAuthAccess
+import Alamofire
 
 class ViewController: UIViewController {
 

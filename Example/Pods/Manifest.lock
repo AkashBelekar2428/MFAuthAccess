@@ -1,10 +1,10 @@
 PODS:
   - Alamofire (5.7.1)
-  - MFAuthAccess (1.2.1):
-    - Alamofire
+  - MFAuthAccess (2.2.4):
+    - Alamofire (~> 5.4)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 5.4)
   - MFAuthAccess (from `../`)
 
 SPEC REPOS:
@@ -17,8 +17,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
-  MFAuthAccess: 93a319dff771e955a48e9742bea4c7e55237342b
+  MFAuthAccess: 241ea9987c0f055abf8d47d29f4d0670f3ff7ee3
 
-PODFILE CHECKSUM: ba7a714c0ff3fc8ad8913340b0865afac635ca8e
+PODFILE CHECKSUM: 4ab1773566adfa5aacf18093c1800e806ffdeee8
 
 COCOAPODS: 1.12.1

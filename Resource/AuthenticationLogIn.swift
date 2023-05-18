@@ -23,8 +23,10 @@ public class AuthenticationLogIn: UIView {
     @IBOutlet weak public var tfEmail:UITextField!
     @IBOutlet weak public var tfPassword:UITextField!
     @IBOutlet weak public var btnValidate:UIButton!
-    @IBOutlet weak public var imgEye:UIImageView!
-    @IBOutlet weak public var imgReminder:UIImageView!
+    @IBOutlet weak public var btnEye:UIButton!
+    @IBOutlet weak public var viewContainerAuth:UIView!
+    @IBOutlet weak public var btnForgotPassword:UIButton!
+    @IBOutlet weak public var btnReminder:UIButton!
     @IBOutlet weak public var lblPassword:UILabel!
     
     //MARK: Variables
@@ -99,8 +101,8 @@ public class AuthenticationLogIn: UIView {
         self.tfPassword.placeholder = config.placeHolderPasswordText
         self.tfPassword.font = config.placeHolderFont
         self.tfPassword.textColor = config.textColor
-        self.imgEye.tintColor = config.imgIconColor
-        self.imgReminder.tintColor = config.imgIconColor
+        self.btnEye.tintColor = config.imgIconColor
+        self.btnReminder.tintColor = config.imgIconColor
     }
     
     //MARK: IBAction
@@ -121,10 +123,26 @@ public class AuthenticationLogIn: UIView {
             myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self.authController!)
         }
     }
+    
+    @IBAction func forgotPasswordAction(_ sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func eyeBtnAction(_ sender:UIButton)
+    {
+        
+    }
+    
+    @IBAction func reminerBtnAction(_ sender:UIButton)
+    {
+        
+    }
 }
 
 @available(iOS 13.0, *)
-extension AuthenticationLogIn:UITextFieldDelegate{
+extension AuthenticationLogIn:UITextFieldDelegate
+{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

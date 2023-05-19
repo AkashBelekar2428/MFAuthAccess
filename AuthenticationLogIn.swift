@@ -148,6 +148,13 @@ public class AuthenticationLogIn: UIView {
     {
         
     }
+<<<<<<< HEAD:AuthenticationLogIn.swift
+=======
+    @IBAction func resendBtnAction()
+    {
+        
+    }
+>>>>>>> 299e4c3 (2.2.6):Resource/AuthenticationLogIn.swift
 }
 
 @available(iOS 13.0, *)
@@ -157,4 +164,5 @@ extension AuthenticationLogIn:UITextFieldDelegate{
         return true
     }
 }
+
 

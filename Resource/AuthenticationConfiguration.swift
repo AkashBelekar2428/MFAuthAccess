@@ -41,3 +41,4 @@ public enum AuthType{
     case pinView, email, mobile, authLog, none
     
 }
+

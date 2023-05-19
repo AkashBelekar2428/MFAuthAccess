@@ -28,6 +28,7 @@ public class Email_Address: UIView{
     @IBOutlet weak public var btnReminder:UIButton!
     @IBOutlet weak public var lblEmailAddress:UILabel!
     @IBOutlet weak public var viewContainerEmail:UIView!
+    @IBOutlet weak public var viewSpaceHeight:UIView!
     
     
     //MARK: Variables
@@ -79,8 +80,8 @@ public class Email_Address: UIView{
         configObj.backgroundColor = UIColor.lightGray
         configObj.btnBackgroundColor = UIColor.green
         configObj.imgIconColor = .gray
-        configObj.placeHolderFont = .systemFont(ofSize: 14)
-        configObj.placeHolderText = "Enter Your Email"
+        configObj.firstPlaceholderFont = .systemFont(ofSize: 14)
+        configObj.firstPlaceHolderText = "Enter Your Email"
         configObj.btnTitle = "Validations"
         configObj.viewType = .email
         
@@ -96,12 +97,19 @@ public class Email_Address: UIView{
         self.lblHeaderLogin.text = config.text
         self.viewHeader.backgroundColor = config.backgroundColor
         self.btnSendPIN.backgroundColor = config.btnBackgroundColor
-        self.tfEmail.placeholder = config.placeHolderText
-        self.tfEmail.textColor = config.textColor
-        self.tfEmail.font = config.placeHolderFont
+        self.tfEmail.placeholder = config.firstPlaceHolderText
+        self.tfEmail.font = config.firstPlaceholderFont
         self.btnReminder.tintColor = config.imgIconColor
         self.lblEmailAddress.textColor = config.textColor
         self.btnSendPIN.titleLabel?.text = config.btnTitle
+        self.viewContainerEmail.layer.borderColor = config.containerViewBorderColor.cgColor
+        self.viewContainerEmail.layer.borderWidth = CGFloat(config.containerViewBorderWidth)
+        self.btnSendPIN.titleLabel?.font = config.btnFont
+        self.btnSendPIN.titleLabel?.textColor = config.bntTitleColor
+        self.lblEmailAddress.font = config.lblFirstFiledFont
+        self.tfEmail.textColor = config.placeHolderTextColor
+        self.viewSpaceHeight.tintColor = config.viewTintColor
+        
     }
     
     //MARK: IBAction
@@ -115,10 +123,6 @@ public class Email_Address: UIView{
         {
             myUtility.showAlter(title: "EMAIL", msg: "Invalide Email", action: "OK", viewController: self.emailController!)
         }
-    }
-    @IBAction func reminerBtnAction(_ sender:UIButton)
-    {
-        
     }
 }
 

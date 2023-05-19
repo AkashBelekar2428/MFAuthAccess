@@ -24,7 +24,7 @@ public class Mobile_Number:UIView {
     @IBOutlet weak public var tfMobileNum:UITextField!
     @IBOutlet weak public var lblCountryCode:UILabel!
     @IBOutlet weak public var lblMobile:UILabel!
-    @IBOutlet weak public var btnEye:UIButton!
+    @IBOutlet weak public var btnReminder:UIButton!
     
     
     //MARK: Variables
@@ -55,8 +55,8 @@ public class Mobile_Number:UIView {
         mobileConfig.text = "LogInn"
         mobileConfig.logo = UIImage(named: "fb")!
         mobileConfig.btnFont = .boldSystemFont(ofSize: 18)
-        mobileConfig.placeHolderText = "Enter Your MobileNumber"
-        mobileConfig.placeHolderFont = .systemFont(ofSize: 14)
+        mobileConfig.firstPlaceHolderText = "Enter Your MobileNumber"
+        mobileConfig.firstPlaceholderFont = .systemFont(ofSize: 14)
         mobileConfig.imgIconColor = .gray
         mobileConfig.viewType = .mobile
         
@@ -73,10 +73,21 @@ public class Mobile_Number:UIView {
         self.lblCountryCode.textColor = config.textColor
         self.viewHeader.backgroundColor = config.backgroundColor
         self.lblMobile.textColor = config.textColor
-        self.tfMobileNum.placeholder = config.placeHolderText
-        self.tfMobileNum.font = config.placeHolderFont
+        self.tfMobileNum.placeholder = config.firstPlaceHolderText
+        self.tfMobileNum.font = config.firstPlaceholderFont
         self.tfMobileNum.textColor = config.placeHolderTextColor
-        self.btnEye.tintColor = config.imgIconColor
+        self.btnReminder.tintColor = config.imgIconColor
+        self.viewContainerMobile.tintColor = config.containerViewBorderColor
+        self.viewContainerMobile.layer.borderWidth = CGFloat(config.containerViewBorderWidth)
+        self.lblMobile.font = config.font
+        self.tfMobileNum.text = config.firstPlaceHolderText
+        self.lblMobile.font = config.lblFirstFiledFont
+        self.lblCountryCode.font = config.lblSecondFiledFont
+        self.btnSendPin.titleLabel?.text = config.btnTitle
+        self.btnSendPin.titleLabel?.font = config.btnFont
+        self.btnSendPin.tintColor = config.btnBackgroundColor
+        self.btnSendPin.tintColor = config.bntTitleColor
+        
     }
     
     //MARK: Custom methods
@@ -117,11 +128,6 @@ public class Mobile_Number:UIView {
         {
             myUtility.showAlter(title: "MOBILE NUMBER", msg: "Invalide Mobile Number", action: "OK", viewController: self.mobileController!)
         }
-    }
-    
-    @IBAction func eyeBtnAction(_ sender:UIButton)
-    {
-        
     }
 }
 

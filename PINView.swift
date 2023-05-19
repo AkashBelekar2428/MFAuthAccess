@@ -24,8 +24,9 @@ public class PINView: UIView{
     @IBOutlet weak public var lblPinDescription:UILabel!
     @IBOutlet weak public var btnValidate:UIButton!
     @IBOutlet weak public var lblPin:UILabel!
+    @IBOutlet weak public var btnResendPin:UIButton!
+    @IBOutlet weak public var viewSpaceHeight:UIView!
     @IBOutlet weak public var viewContainerPIN:UIView!
-    @IBOutlet weak public var btnResentPIN:UIButton!
     
     @IBOutlet weak public var bgViewVerifyPin: UIView!
     @IBOutlet weak public var pinVarTf: UITextField!
@@ -287,6 +288,22 @@ public class PINView: UIView{
         self.lblHeaderLogin.textColor = config.textColor
         self.imgHeaderLogo.image = config.logo
         self.lblPinDescription.text = config.pinText
+        self.btnResendPin.titleLabel?.text = config.resendPinBtnTitleText
+        self.btnResendPin.titleLabel?.textColor = config.textColor
+        self.btnResendPin.titleLabel?.font = config.btnFont
+        self.btnResendPin.backgroundColor = config.btnBackgroundColor
+        self.btnValidate.titleLabel?.text = config.btnTitle
+        self.btnValidate.titleLabel?.textColor = config.textColor
+        self.btnValidate.titleLabel?.font = config.btnFont
+        self.btnValidate.backgroundColor = config.btnBackgroundColor
+        self.btnResendPin.backgroundColor = config.resendPinBtnBackgroundColor
+        self.btnResendPin.titleLabel?.textColor = config.resendPinBtnTextColor
+        self.btnResendPin.titleLabel?.font = config.resendPinBtnFont
+        self.viewSpaceHeight.layer.borderColor = config.spaceViewBorderColor.cgColor
+        self.viewContainerPIN.layer.borderWidth = CGFloat(config.containerViewBorderWidth)
+        self.viewContainerPIN.layer.borderColor = config.containerViewBorderColor.cgColor
+        
+        
     }
     
     //MARK: IBAction

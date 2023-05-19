@@ -15,7 +15,6 @@ public protocol AuthenticationLogInDelegate{
 @available(iOS 13.0, *)
 public class AuthenticationLogIn: UIView {
     
-    //MARK: IBOutlets
     @IBOutlet weak public var imgHeaderLogo:UIImageView!
     @IBOutlet weak public var lblHeaderLogin:UILabel!
     @IBOutlet weak public var viewHeader:UIView!
@@ -28,6 +27,7 @@ public class AuthenticationLogIn: UIView {
     @IBOutlet weak public var btnForgotPassword:UIButton!
     @IBOutlet weak public var btnReminder:UIButton!
     @IBOutlet weak public var lblPassword:UILabel!
+    @IBOutlet weak public var viewSpaceHeight:UIView!
     
     //MARK: Variables
     let nibName = "AuthenticationLogIn"
@@ -53,7 +53,9 @@ public class AuthenticationLogIn: UIView {
         view.frame = self.bounds
         tfEmail.delegate = self
         tfPassword.delegate = self
+        
         self.addSubview(view)
+        self.viewContainerAuth.isHidden = true
     }
     
     func loadViewFromNib() -> UIView? {
@@ -64,20 +66,25 @@ public class AuthenticationLogIn: UIView {
     
     public func setAuthDefaultThemes(){
         let authConfiguration = AuthenticationConfiguration()
-        authConfiguration.authType = "EmailAddress"
+        authConfiguration.firstLblText = "EmailAddress"
+        authConfiguration.secondLblText = "Password"
         authConfiguration.text = "LogIn"
-        authConfiguration.backgroundColor = .gray
+        authConfiguration.backgroundColor = .blue
         authConfiguration.font = .boldSystemFont(ofSize: 24)
         authConfiguration.lblFirstFiledFont = .boldSystemFont(ofSize: 14)
         authConfiguration.lblSecondFiledFont = .boldSystemFont(ofSize: 14)
         authConfiguration.textColor = .black
         authConfiguration.logo = UIImage(named: "twitter")!
         authConfiguration.placeHolderTextColor = .gray
-        authConfiguration.placeHolderText = "Enter Your Email"
-        authConfiguration.placeHolderPasswordText = "Enter Your Password"
-        authConfiguration.placeHolderFont = .systemFont(ofSize: 14)
+        authConfiguration.firstPlaceHolderText = "Enter Your Email"
+        authConfiguration.secondplaceHolderText = "Enter Your Password"
+        authConfiguration.firstPlaceholderFont = .systemFont(ofSize: 14)
+        authConfiguration.secondPlaceholderFont = .systemFont(ofSize: 8)
         authConfiguration.imgIconColor = .gray
         authConfiguration.btnBackgroundColor = .green
+        authConfiguration.btnTitle = "Validate"
+        authConfiguration.containerViewBorderWidth = 4
+        authConfiguration.containerViewBorderColor = .gray
         authConfiguration.viewType = .authLog
         
         self.setThemWithAuthConfiguration(config: authConfiguration)
@@ -93,16 +100,23 @@ public class AuthenticationLogIn: UIView {
         self.lblAuthType.font = config.lblFirstFiledFont
         self.viewHeader.backgroundColor = config.backgroundColor
         self.btnValidate.backgroundColor = config.btnBackgroundColor
-        self.lblAuthType.text = config.authType
+        self.lblAuthType.text = config.firstLblText
+        self.lblPassword.text = config.secondLblText
         self.lblPassword.font = config.lblSecondFiledFont
-        self.tfEmail.placeholder = config.placeHolderText
-        self.tfEmail.font = config.placeHolderFont
+        self.tfEmail.placeholder = config.firstPlaceHolderText
+        self.tfPassword.placeholder = config.secondplaceHolderText
+        self.tfEmail.font = config.firstPlaceholderFont
         self.tfEmail.textColor = config.textColor
-        self.tfPassword.placeholder = config.placeHolderPasswordText
-        self.tfPassword.font = config.placeHolderFont
+        self.tfPassword.font = config.secondPlaceholderFont
         self.tfPassword.textColor = config.textColor
         self.btnEye.tintColor = config.imgIconColor
         self.btnReminder.tintColor = config.imgIconColor
+        self.btnValidate.titleLabel?.text = config.btnTitle
+        self.viewContainerAuth.layer.borderWidth = CGFloat(config.containerViewBorderWidth)
+        self.viewContainerAuth.layer.borderColor = config.containerViewBorderColor.cgColor
+        self.viewSpaceHeight.layer.borderColor = config.viewTintColor.cgColor
+        self.btnForgotPassword.titleLabel?.text = config.resendPinBtnTitleText
+        self.viewContainerAuth.isHidden = false
     }
     
     //MARK: IBAction
@@ -124,25 +138,20 @@ public class AuthenticationLogIn: UIView {
         }
     }
     
-    @IBAction func forgotPasswordAction(_ sender: UIButton)
+    @IBAction func eyeBtnAction()
     {
-        
+        tfPassword.isSecureTextEntry = !tfPassword.isSecureTextEntry
+        let btneyeImg = tfPassword.isSecureTextEntry ? UIImage(systemName: "eye.slash") : UIImage(systemName: "eye")
+        btnEye.setImage(btneyeImg, for: .normal)
     }
-    
-    @IBAction func eyeBtnAction(_ sender:UIButton)
-    {
-        
-    }
-    
-    @IBAction func reminerBtnAction(_ sender:UIButton)
+    @IBAction func reminderBtnAction()
     {
         
     }
 }
 
 @available(iOS 13.0, *)
-extension AuthenticationLogIn:UITextFieldDelegate
-{
+extension AuthenticationLogIn:UITextFieldDelegate{
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
